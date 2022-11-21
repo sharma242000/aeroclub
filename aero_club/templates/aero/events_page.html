@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events_Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/EffectComposer.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/RenderPass.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/ShaderPass.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/CopyShader.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/LuminosityHighPassShader.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/UnrealBloomPass.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
+  {% load static %}
+  <script src="{% static 'aero/js/agrawal.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'aero/css/agrawal.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+  {% include 'aero/components/ga_code.html' %}
+</head>
+<style>
+  ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+  .gsap-marker-end{
+    opacity: 0;
+  }
+  .gsap-marker-start{
+    opacity: 0;
+    
+  }
+  .gsap-marker-scroller-end{
+    opacity: 0;
+  }
+  .gsap-marker-scroller-start{
+    opacity: 0;
+  }
+</style>
+<body>
+  
+  <canvas class="experience"></canvas>
+  <div class="scrollTarget"></div>
+  <div class="vignette-radial"></div>
+  
+  <!-- code for navigation bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="/aero"><b>HOME</b></a>
+    <a href="{%url 'aero-about' %}"><b>ABOUT</b></a>
+    <a href="{%url 'aero-teampage'%}"><b>TEAM</b></a>
+     
+    <div class="dropdown">
+      <button class="dropbtn"><b>PROJECTS</b> 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="{%url 'aero-itsp' %}"><b>ITSP</b></a>
+        <a href="{%url 'aero-other' %}"><b>CLUB PROJECTS</a>
+          <a href="{%url 'aero-glider' %}"><b>PROTOTYPES</a>
+        </div>
+      </div> </b>
+      <a href="{% url 'aero-blogs' %}"><b>BLOGS</b></a>
+      <a href="{%url 'aero-gallery' %}"><b>GALLERY</b></a>
+      <a href="{%url 'aero-events' %}" class="active"><b>EVENTS</b></a>
+      <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    
+    <!-- code for texts -->
+    <div id="overlay1" onclick="off1()">
+      <div id="text1" class="character">
+        The RC Plane competition is the flagship event of the club and it is a premier technical event of the year, which is known for its enormity and the unparalleled technical input that goes into it. It lasts about 1.5 months in which students (mostly teams of 4) make a Remote Controlled Plane of their choice from scratch: Designing, mechanical part, electronics and the final build. After this, the teams battle it out by actually flying the planes on the competition days. During the whole process, they learn the nitty gritties of basic aviation and aeromodelling.
+        <br><br>
+        This event serves the primary motivation behind The Aeromodelling Club IIT Bombay, which is 'To increase the number of Aeromodellers and Flyers in the institute'.
+        <br><br>
+        The event this year was a major hit among the students with over 109 teams (i.e. over 400 students) participating successfully.
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/RC1.jpg' %}" alt="RC PLANE" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/RC2.jpg' %}" alt="RC PLANE" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/RC3.jpg' %}" alt="RC PLANE" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay2" onclick="off2()">
+      <div id="text2" class="character">
+        Aeromodelling Club IIT Bombay conducted a PlutoX drone hackathon on 25th January in collaboration with <a href="https://www.facebook.com/dronaaviation/?__tn__=K-R&eid=ARD_fMZG5IspnGVgJVO6u5AxEMMjE6yZJ_6mpHwSYt4EySLSSv7CF5uRgv2CmPvwMzxDkZAqes3xjKTo&fref=mentions&__xts__%5B0%5D=68.ARCEbm6ju44zFXYKopRET-ba985w6nZFBNF8AtfD6QXbadVmKbZmzKmqEuG2dsyuSPCb4Bnn0_P9q8LztABbHpXbMA5tOie90Z94ygLjyRptHv8y6qYPDzGssZbAbJgJucdyBCjJjp3pEURJmbsokLBNpMsZTWwPkxmqoeVlQdzO9MjgTgcFN4saH6Y1DldzPKOQGjm7ACsqnfIyJCdS5emmOX315yaCj8Jyp-EYn3L3eQI-RuddE33mqQbJ2uHX5vJX-5Kfh7-vQFikHnSEwXttrz_VR0ONrdzP90TugAHu8N1HmIL_Tsetf1OjtBpD8iqkKVt4Ic8Szrqd3jkDN7pOGg">Drona Aviation</a>. The PlutoX is Drona Aviation’s flagship drone and along with its proprietary Flight Control board, gives you a chance to experiment the way you would with an Arduino. The hackathon consisted of various problem statements that students had to work upon. The event concluded with students presenting their PlutoX drones coded according to problem statements given to them and some teams showcased theirs perfectly!
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/PLUTO X 1.jpg' %}" alt="PLUTO-X" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/PLUTO X 3.jpg' %}"alt="PLUTO-X" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/PLUTO X 5.jpg' %}"alt="PLUTO-X" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay3" onclick="off3()">
+      <div id="text3" class="character">
+        The Airshow happened with the motivation to introduce IC Engine RC planes and high-performance planes among students by demonstrating and opening up a real 120cc Glow Plug Engine powered RC Plane. Extreme manoeuvres like Knife Edge, Barrel Rolls and Hovering were performed by the 60cc IC engine Carbureted beast under flying by our PhD. Scholar Mr Sohrab Mistri
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/AIRSHOW 1.JPG' %}" alt="AIRSHOW" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/AIRSHOW 3.JPG' %}" alt="AIRSHOW" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/AIRSHOW 4.JPG' %}" alt="AIRSHOW" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay4" onclick="off4()">
+      <div id="text4" class="character">
+        This was the introductory event of the club and it took place on 15th August, on Independence day in LH 301 and LH 302 halls of lecture hall complex.
+        <br><br>
+        This event was attended by 150+ students mostly consisting of 1st Year B.Tech. and 1st Year M.Tech. students with a minority of Btech sophomores and PhD students. To accommodate the large audience, teams of 2 were formed amongst students, something that actually acted as a huge morale booster, as friends worked together to realize their designs.
+        <br><br>
+        For the first one hour all the participants were taught about basics of Aerodynamics, wing theory, design and structure of a glider. This was followed by 3 hours of hands-on session to Design, Build and Testing out the gliders.To add a problem statement in the mix, students were challenged to make their glider fly across the Lecture Hall Foyer, and through to Shirucafe, a feat that 9 teams were able to accomplish.
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/glider 2.jpg' %}" alt="GLIDER WORKSHOP" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/GLIDER 3.jpg' %}" alt="GLIDER WORKSHOP" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/GLIDER 5.jpg' %}" alt="GLIDER WORKSHOP" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay5" onclick="off5()">
+      <div id="text5" class="character">
+        This workshop was organized to give complete beginners an introduction into what drones are about. Students were educated on basic concepts like roll, pitch and yaw, physics of quadcopter flight, and then given a chance to pilot a nano-quadcopter themselves. To add a fun aspect, students were challenged to fly the quadcopter through a small hoop, something that only seven students were able to accomplish.
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/drone fly 1.jpg' %}" alt="DRONE FLY" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/drone fly 2.jpg' %}" alt="DRONE FLY" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/drone fly 3.JPG' %}" alt="DRONE FLY" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay6" onclick="off6()">
+      <div id="text6" class="character">
+        This mid prep GC's aim is to build a powered glider and attempt to land as close as possible to the target line. Gliders were to be built from scratch by the team. No off the shelf gliders were allowed.
+        <br><br>
+        #First-year students will be representing their senior hostels for this GC. Only one #a team per hostel is allowed.
+        <br><br>
+        For more information about this event click <a href="https://docs.google.com/document/d/1SpYozvtz67Gr-tHmTmJPQMxDOtVHjFukwCGWiWVnVjQ/edit?usp=sharing&fbclid=IwAR1ukuC8xOCY3_58LyrfSCD0o1r61Qhccez_Et2xTG_54pa6-gocAyJOqd0">here</a>. 
+        <br><br>
+        
+      </div>
+    </div>
+    <div id="overlay7" onclick="off7()">
+      <div id="text7" class="character">
+        <br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/WATER ROCKET 1.jpg' %}""WATER ROCKET 1.jpg" alt="WATER ROCKET" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/WATER ROCKET 2.jpg' %}" alt="WATER ROCKET" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/WATER ROCKET 3.jpg' %}" alt="WATER ROCKET" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay8" onclick="off8()">
+      <div id="text8" class="character">
+        During the months of january and february, the Lukkha Flying Sessions were conducted on almost every weekened. the aim of these sessions was to inculcate the passion of flying among the aeromodelling enthusiasts. 
+        <br><br>
+        A simulator/build session was held at each Saturday evening for the all the interested flyers to make their planes flight ready.
+        
+        they were guided by the club members to improve their RC flying along with learning some additional skills such as performing acrobatic maneuvers and using the payload mechanisms. The pilots who performed extremely good on RC planes were allowed to fly quads too!
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/LFS 1.jpg' %}" alt="LUKKHA FLYING SESSION" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/LFS 2.jpg' %}" alt="LUKKHA FLYING SESSION" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/LFS 3.jpg' %}" alt="LUKKHA FLYING SESSION" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="overlay9" onclick="off9()">
+      <div id="text9" class="character">
+        A boomerang is a thrown tool that is designed to spin about an axis perpendicular to the direction of its flight. A returning boomerang is designed to return to the thrower. It is well known as a weapon used by Indigenous Australians for hunting.
+        <br><br>
+        This year's boomerang event consisted of a small lecture on the physics behind boomerangs and later a fun competition testing both endurance and accuracy of the boomerangs. The event saw enthusiasts ranging from the freshers up until the PhD students ideating, innovating, building and throwing boomerangs of all sizes and shapes.
+        <br><br>
+        
+        
+      </div>
+    </div>
+    <div id="overlay10" onclick="off10()">
+      <div id="text10" class="character">
+        Box kite event was conducted on the auspicious festival of Makar Sankranti where students build their own kites. Box kite is known to have the maximum lift and is the only kite in which man has successfully tried to fly.
+        <br><br>
+        <div class="row">
+          <div class="column">
+            <img src="{% static 'aero/img/BOX KITE 1.jpg' %}" alt="BOX KITE" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/BOX KITE 3.jpg' %}" alt="BOX KITE" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{% static 'aero/img/BOX KITE 4.jpg' %}" alt="BOX KITE" style="width:100%">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    <div id="div1" class="example" onclick="on1()">RC PLANE COMPETITION</div>
+    <div id="div2" class="example" onclick="on2()">PLUTO-X HACKATHON</div>
+    <div id="div3" class="example" onclick="on3()">AIRSHOW</div>
+    <div id="div4" class="example" onclick="on4()">GLIDER WORKSHOP</div>
+    <div id="div5" class="example" onclick="on5()">ROTOR RIOT</div>
+    <div id="div6" class="example" onclick="on6()">GLIDER GC</div>
+    <div id="div7" class="example" onclick="on7()">WATER ROCKET</div>
+    <div id="div8" class="example" onclick="on8()">LUKKHA FLYING SESSION</div>
+    <div id="div9" class="example" onclick="on9()">BOOMERANG WORKSHOP</div>
+    <div id="div10" class="example" onclick="on10()">BOX KITE</div>
+    
+    <script>
+      function on1() {
+        document.getElementById("overlay1").style.display = "block";
+      }
+      
+      function off1() {
+        document.getElementById("overlay1").style.display = "none";
+      }
+      function on2() {
+        document.getElementById("overlay2").style.display = "block";
+      }
+      
+      function off2() {
+        document.getElementById("overlay2").style.display = "none";
+      }
+      function on3() {
+        document.getElementById("overlay3").style.display = "block";
+      }
+      
+      function off3() {
+        document.getElementById("overlay3").style.display = "none";
+      }
+      function on4() {
+        document.getElementById("overlay4").style.display = "block";
+      }
+      
+      function off4() {
+        document.getElementById("overlay4").style.display = "none";
+      }
+      function on5() {
+        document.getElementById("overlay5").style.display = "block";
+      }
+      
+      function off5() {
+        document.getElementById("overlay5").style.display = "none";
+      }
+      function on6() {
+        document.getElementById("overlay6").style.display = "block";
+      }
+      
+      function off6() {
+        document.getElementById("overlay6").style.display = "none";
+      }
+      function on7() {
+        document.getElementById("overlay7").style.display = "block";
+      }
+      
+      function off7() {
+        document.getElementById("overlay7").style.display = "none";
+      }
+      function on8() {
+        document.getElementById("overlay8").style.display = "block";
+      }
+      
+      function off8() {
+        document.getElementById("overlay8").style.display = "none";
+      }
+      function on9() {
+        document.getElementById("overlay9").style.display = "block";
+      }
+      
+      function off9() {
+        document.getElementById("overlay9").style.display = "none";
+      }
+      function on10() {
+        document.getElementById("overlay10").style.display = "block";
+      }
+      
+      function off10() {
+        document.getElementById("overlay10").style.display = "none";
+      }
+    </script>
+    
+  </body>
+</body>
+</html>

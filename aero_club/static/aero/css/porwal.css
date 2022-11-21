@@ -1,0 +1,373 @@
+@font-face {
+  font-family:"BROOKLINE-Condensed";
+  src:url("Brookline.eot?") 
+  format("eot"),url("Brookline.woff") 
+  format("woff"),url("Brookline.ttf")
+   format("truetype"),url("Brookline.svg#BROOKLINE-Condensed") 
+   format("svg");
+   font-weight:"bold";
+  }
+  @font-face {
+    font-family: 'Bahnschrift Regular';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Bahnschrift Regular'), url('BAHNSCHRIFT 9.woff') format('woff');
+    }
+  @font-face{
+    font-family: 'PlatNomar';
+    src:url("PlatNomor.ttf") format("truetype")
+  }
+  @font-face{
+    font-family: 'MANDATOR';
+    src:url("MANDATOR.ttf") format("truetype")
+  }
+  body{
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    
+  
+    
+  }
+  /* header */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* header ends */
+  .logoclub{
+    width: 10px;
+     height:65px; 
+     
+  }
+  .bg {
+    background-image: url("background.jpg");
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index:0 ;
+   background-attachment: fixed;
+    
+  }
+  .ate{
+    position: absolute;
+   z-index: 0;
+    transform: translate(-50%, -50%);
+    font-family:"BROOKLINE-Condensed";
+    font-size: 24vw;
+    margin-top: 57vh;
+    margin-left: 68vw;
+    color: #4b6783;
+    opacity:80%;
+    text-shadow: 1px 1px 3px black;
+    
+  }
+  #drone{
+    background-image: url("WebwallDrone.png");
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display: block;
+   
+    bottom: 0%;
+    left: 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 49%;
+    z-index:1 ;
+   background-attachment: fixed;
+   
+  }
+  .innov{
+    position: absolute;
+    z-index: 3;
+     transform: translate(-50%, -50%);
+     font-family: 'Bahnschrift Regular';
+     
+     font-size: 8.5vw;
+     margin-top: 42vh;
+     margin-left:  36vw;
+     color:#4cb8c3;
+     opacity:80%;
+     text-shadow: 1px 1px 3px black;
+    
+    
+     
+  }
+  .avi{
+    position: absolute;
+    z-index: 2;
+     transform: translate(-50%, -50%);
+     font-family: 'Bahnschrift Regular';
+     font-weight: bold;
+     font-size: 17vw;
+     margin-top: 66vh;
+     margin-left: 36vw;
+     color:#e8f6fb;
+     text-shadow: 1px 1px 3px black;
+     opacity:80%;
+  }
+  .font{
+    font-family: 'Bahnschrift Regular';
+    font-size: 20px;
+    
+  }
+  #box {
+    font-family:"PlatNomar";
+    letter-spacing: 2px;
+    font-size: 5vw; 
+    text-align: center;
+    color: #021238;
+    margin-top: 1.5vw;
+    margin-left: 35px;
+    z-index: 20;
+    position: relative;
+  }
+  #about{
+    font-family: 'Bahnschrift Regular';
+    text-align: center;
+    color:#021238;
+    letter-spacing: 0.66px;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .transbox{
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    height :450px;;
+    position: absolute;
+    top: 3200px;
+  }
+
+  #contact{
+    padding-top: 5vh;
+    padding-left: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bold;
+  }
+  #wh{
+    text-decoration: none;
+    color:white;
+  }
+  #social{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bold;
+    color:white;
+    padding-top:6vh;
+    padding-left:3vw;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    height: 150px; /* Should be removed. Only for demonstration */
+    
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  .container{
+    position: absolute;
+  text-align: center;
+  color: white;
+  }
+  .fa {
+    padding: 0.18vw;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    
+    color: white;
+  }
+  .fa-youtube {
+    
+    color: white;
+  }
+  
+  .fa-instagram {
+   
+    color: white;
+  }
+  .fa-google {
+   
+    color: white;}
+
+    #info{
+      padding-top: 2vh;
+      padding-left: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:medium;
+      font-weight: bold;
+    }
+    #adress{
+      padding-top: 1vh;
+      padding-left: 3vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:13px;
+    }
+   
+    #mail{
+      padding-top: 1vw;
+      padding-left: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:13px;
+    }
+    @media only screen and (max-width: 600px) {
+
+      #mail{
+        padding-top: 0vw;
+        padding-left: 3vw;
+      font-size: 10px;}
+        #adress{
+          padding-top: 0vh;
+          padding-left: 3vw;
+        font-size: 10px;}
+        #info{
+          padding-top: 4vh;
+          padding-left: 3vw;
+          font-size:10px;}
+          #social{
+            padding-top: 8vw;
+            font-size:small;
+            padding-left:3vw;
+          }}
+          @media only screen and (max-width: 600px) and (min-width: 400px) {
+          .innov{
+            margin-top: 46vh;
+            margin-left:  33vw;
+            font-size:10vw;
+          }
+          .avi{
+            font-size: 20vw;
+            margin-top: 58vh;
+            margin-left: 33vw;
+          }
+          .ate{
+            font-size: 28vw;
+            margin-top: 53vh;
+            margin-left: 68vw;
+          }
+          .column{
+            width:50%;
+            height:100px;
+          }
+          #skrollr-body{
+            margin-top: 1500px;
+          }
+        }
+       
+    @media only screen and (max-width: 870px) and (min-width: 600px) {
+
+      .font{
+        font-size: 1.5vw;
+      }
+      .innov{
+        margin-top: 46vh;
+        margin-left:  33vw;
+        font-size:10vw;
+      }
+      .avi{
+        font-size: 20vw;
+        margin-top: 64vh;
+        margin-left: 33vw;
+      }
+      .ate{
+        font-size: 28vw;
+        margin-top: 57vh;
+        margin-left: 68vw;
+      }
+    
+    }
+  
+  @media only screen and (max-width: 400px) {
+
+   
+        .innov{
+          margin-top: 45.5vh;
+          margin-left:  32vw;
+          font-size:12vw;
+        }
+        .avi{
+          font-size: 22vw;
+          margin-top: 54.5vh;
+          margin-left: 32vw;
+        }
+        .ate{
+          font-size: 32vw;
+          margin-top: 52vh;
+          margin-left: 71vw;
+        }
+        .column{
+          width :100%;
+          height:100px;
+        }
+        #skrollr-body{
+          margin-top: 1500px;
+        }
+      }
+      

@@ -1,0 +1,751 @@
+{%load static %}
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Project Webpage</title>
+  
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <!-- Bootstrap CSS -->
+  
+  <link  rel="stylesheet" type="text/css" href="{% static 'aero/css/jobanputra.css' %}">
+  <link  rel="stylesheet" type="text/css" href="{% static 'aero/css/nav.css' %}">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  {% include 'aero/components/ga_code.html' %}
+  <style>
+    ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+</head>
+<body>
+  {% include 'aero/components/navbar.html' %}
+  
+  <!------------backgrounf images------------------------------->
+  <img src = "../../aero/css/images/background.png" class = 'bg'>
+</img>
+<div class = "container"> 
+  <div class="row" style = "overflow: hide;" >
+    <div class="col"></div>
+    <div class="col-12"   >
+      <h1 id = "project-text" style = "text-align: center;padding-top: 100px;" > PROJECTS </h1>
+      <!----------ITSP------------->
+      <!-------8th card----Ion Propulsion----------------------------------------------------------------------------------------------->
+      
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row no-gutters " id = "card-full"  >
+          <div class="col click card8" id = "card-left">
+            
+            
+            <div class = "overlay"></div>
+          </div>
+          
+          <div class="col-6 expand click " id = "card-right"  >
+            
+            <div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+              <div class = "flex-child">	
+                <a href  = "https://docs.google.com/document/d/1n5L3vmqDcplc15pdjtfOa7ZNRGIKBjMLPH6rx5acQtw/edit#heading=h.w8jh8fdnutcg" onclick="disable()">
+                  <img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+                </div>
+                <div class = "flex-child">
+                  <!-- <a href  = "https://youtu.be/eXtkgad20mM">
+                    <img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sudarshana:
+                    QR-code Scanning Security Drone
+                    </h5>
+                  <small class="text-muted inv1 invisible1">Team Members: Anjali,Prapti Sao,Reet Mhaske, Bhuvana</small>
+                  <p class="card-text inv1 invisible1">
+                    Ever seen the Autonomous-fighting drones in Sci-Fi/ Spy movies?Wished to have it at your disposal? Just like you, we ,too, were fascinated by them, and ITSP was the perfect platform to materialise this idea , of course , a preliminary version of those far-from reality drone-bots.
+                    <span class ="invisible inv" >Neither armed with fancy weapons nor laser vision, we decided our drone to perform a quite simple task: to recognize human threats by scanning a QR code on their identity card. 
+                      The Drone hovers along a predefined path , scans and reads the QR code on Human identity card, then reports the coordinates of the point where the human was detected.It uses a rgb depth camera to take a picture of qr-code and uses python libraries to scan that code and return the value that is written in that particular qr-code. 
+                           This prefatory drone will be of much value as it can classify the humans, based on their QR code values, into “ Authorized “ or “UnAuthorized”.
+                      Being autonomous,such avant-garde security drones need little human intervention.    
+                      These will be of immense market value for security companies,once improved upon ,  as they are faster than human security and more faithful, making it  worthy of its name, Sudarshana , the protecting Discus of Lord Krishna.
+                      </span><br></p>
+                      <Br>
+                      <Br>
+                      <Br>
+                        
+                      <img src="../../aero/css/images/it1.png" alt="images of ion" width="520px">
+                      <img src="../../aero/css/images/it2.png" alt="images of ion" width="520px">
+                      <p class="card-text">
+                        Inspiration for Idea: There was an incident in Shanghai, in which a drone was used for advertising purposes. Drone makes a QR code in sky and humans can scan that code, it directs them to a gaming site they introduced. Also this was something quite new and impressive for humans, so it attracted good involvement and publicity.From this, it gave me an idea that by QR code scanning only we can do something we can use in the workplace also for the security purpose.
+                      </p>
+                      <img src="../../aero/css/images/it3.png" alt="images of ion" width="520px">
+                      <img src="../../aero/css/images/it4.png" alt="images of ion" width="520px">
+                      <br>
+                      <h5 class="card-text">Learnings/Key Takeaways/Experience:
+                      </h5>
+                      <p class="card-text">
+                        <li class="card-text">Familiar with ROS, creating node,topic, subscribing and publishing data from topic.
+                        </li>
+                        <li class="card-text">Making an environment in Gazebo according to our problem statement.
+                        </li> 
+                        <li class="card-text">PX4 and Mavros libraries simulate the drone.Use depth camera and rqt for getting camera feed of the environment. </li>
+                        <li class="card-text">Use python for setting waypoints to move the drone to that.
+                        </li>
+                        <li class="card-text">Python libraries for scanning qr code and getting value from that.
+                        </li>
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------9th card-----gesture Controlled Drone---------------------------------------------------------------------------------------------------->
+              <div class="card mb-3 " style="max-width: 100%;">
+                <div class="row no-gutters " id = "card-full"  >
+                  <div class="col click card9" id = "card-left">
+                    
+                    
+                    <div class = "overlay"></div>
+                  </div>
+                  
+                  <div class="col-6 expand click " id = "card-right"  >
+                    
+                    <div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+                      <div class = "flex-child">	
+                        <a href  = "https://docs.google.com/document/d/1-s1nHBiOhBgOzWKLQFDFXuKVdk8AwgkA2FbLMvysHS8/edit?usp=sharing" onclick="disable()">
+                          <img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+                        </div>
+                        <div class = "flex-child">
+                          <a href  = "https://youtu.be/YPmmcDYNt-Y">
+                            <img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Gesture Controlled Drone</h5>
+                          <small class="text-muted inv1 invisible1">Team member: Dibyojeet Bagchi | Prashant Shettigar | Immanuel Williams | Karan Agarwalla</small>
+                          <p class="card-text inv1 invisible1">
+                            Devices like drones are widely controlled using remote but what if we could control them using gestures!<span class = "invisible inv">Won’t it be cool and much easier to fly a drone by moving just your hands.It would be much easier to control a gesture based drone compared to a remote control based device.<br>
+                              The idea was initially to develop a full-fledged gesture control drone but for constraints of budget, we are having gestures for two motions roll and pitch. The throttle and yaw is sent through the RC receiver.<br>
+                              Initially, we selected this project as it seemed cool to control a drone with gestures but we later realised that this gesture technology can be extended to many devices, say gesture-based switches for electrical appliances. Smartphones could come with hand gesture control . The motion-based control using MPU can be used to control many devices in the future. Like switching on lights just by hand movements.   </p>       
+                              <Br>
+                              <Br>
+                              <Br>
+                              <img src="../../aero/css/images/gd1.JPG" alt="images of gesture drone" width="520px">
+                              <img src="../../aero/css/images/gd2.JPG" alt="images of gesture drone" width="520px">
+                              <br>
+                              <h5 class="card-text">Learnings/Key Takeaways/Experience:</h5></span>
+                              <li class="card-text">We learnt about Flight controller KK2.1 PI calibrations and options on KK2.1 to check connections. Further the use of an IMU (MPU6050 in our case) taught us how to clear noise from an analog signal using filters. The choice of filters was extremely critical and after trials we found Kalman filters giving us the best of values. </li>
+                              <li class="card-text">Coding on Arduino IDE was also a pleasurable experience. Building our own transmitters and receivers taught us about pipes and addresses.</li>
+                              <li class="card-text">We learnt about aerodynamics of drones and the appropriate selection of components was an important part of it. The optimisation of usage of power was also important to give a good flight time. Building a drone by ourselves was a dream come true.</li>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!------10th card-----Bionicopter---------------------------------------------------------------------------------------------------------->
+                      <div class="card mb-3 " style="max-width: 100%;">
+                        <div class="row no-gutters " id = "card-full"  >
+                          <div class="col click card10" id = "card-left">
+                            
+                            
+                            <div class = "overlay"></div>
+                          </div>
+                          
+                          <div class="col-6 expand click " id = "card-right"  >
+                            
+                            <div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+                              <div class = "flex-child">	
+                                <a href  = "https://drive.google.com/drive/folders/13gr6UBglnt458ELScuXEiqwPpqfFJ5_7" onclick="disable()">
+                                  <img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+                                </div>
+                                <div class = "flex-child">
+                                  <a href  = "nowhere">
+                                    <img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Bionicopter</h5>
+                                  <small class="text-muted inv1 invisible1">Team members: Abhinav , Rishyanth , Yagneswar , Karthikeya</small>
+                                  <p class="card-text inv1 invisible1">
+                                    This project is to make a bionic-opter which is a remote-controlled robotic model of a dragon-fly.
+                                    <span class = "invisible inv"> Our main inspiration to make this is our interest in drones and aerial vehicles, we were interested in making an unmanned remote-controlled copter in a different way from others. So, we used the flapping mechanism of a dragon-fly to make the drone fly and hence we named it bionicopter(bionic-copter).
+                                      <Br>
+                                      <Br>
+                                      <Br>
+                                      <br>
+                                      <img src="../../aero/css/images/bionicopter.JPG" alt="bionic-copter" width="520px">
+                                      <img src="../../aero/css/images/bionicopter1.jpg" alt="bionic-copter"width="520px">
+                                      <br>     
+                                      We are going to control the bionicopter through blue-tooth from an app for which the code had been written and uploaded to Raspberry-pi and the wing flap frequency and servo motor can be used to rotate the flapper orientation which changes the flapping direction and hence movement direction. 
+                                    </p>
+                                    <b class="card-text">Learnings/Key Takeaways/Experience:</b>
+                                    <li class="card-text">We have used wrong dc motors which were unable to give enough power for wing flapping but we did every design based on that which we had to change according to new motors. This gave us a very bad experience and taught a lesson for not planning an alternative.</li>
+                                    <li class="card-text">Some of us did new-things like soldering, coding for Raspberry-pi (and hence learnt Python), 3D designing (some new parts were learned from the web) and working on 3D-printer.</li>
+                                    <li class="card-text">Being always conscious while working is also a very important thing as being careless at some point of time ruins the entire connected parts.</li>
+                                    <li class="card-text">Never procrastinate your work as this led our project not to complete on time .</li>
+                                    <li class="card-text">Being Confident under any circumstances is the best learning for all of us. </li>
+                                  </span>
+                                  
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-------11th card------High on Wheels----------------------------------------------------------------------------------------------------->
+                          <div class="card mb-3 " style="max-width: 100%;">
+                            <div class="row no-gutters " id = "card-full"  >
+                              <div class="col click card11" id = "card-left">
+                                
+                                
+                                <div class = "overlay"></div>
+                              </div>
+                              
+                              <div class="col-6 expand click " id = "card-right"  >
+                                
+                                <div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+                                  <div class = "flex-child">	
+                                    <a href  = "https://drive.google.com/drive/folders/13gr6UBglnt458ELScuXEiqwPpqfFJ5_7" onclick="disable()">
+                                      <img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+                                    </div>
+                                    <div class = "flex-child">
+                                      <a href  = "nowhere">
+                                        <img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">High on Wheels</h5>
+                                      <small class="text-muted inv1 invisible1">Team members: Ekta Agarwal | Arjun gupta | Naman Saraf</small>
+                                      <p class="card-text inv1 invisible1">
+                                        A quadcopter that can fly as well as walk. We have made a X shaped quadcopter that has a spider bot attached at bottom of it.<span class = "invisible inv">We have made a X shaped quadcopter that has a spider bot attached at bottom of it.
+                                          <br>
+                                          <Br>
+                      <Br>
+                      <Br>
+                                          <img src="../../aero/css/images/how.jpg" alt="..." width="520px">
+                                          <img src="../../aero/css/images/how1.jpg" alt="..." width="520px"></spam>
+                                          <h5 class="card-text">Learnings/Key Takeaways/Experience:</h5>
+                                          <li class="card-text">If flying conditions are adverse due to different reasons like wind, rain, dense forest, etc then walking mechanism could help to ensure its safety as well as it will ensure a mission to carry on.</li>
+                                          <li class="card-text">If our quad got caught sight of opposition then we can ensure to hide it on the ground due to its walking mechanism.</li>
+                                          <li class="card-text">We want to create drones which can sneak into dangerous places without getting noticed, our project is somewhat related to it, that’s why we are doing this project.</li> 
+                                          <li class="card-text">Our spider bot is 4 legged which has 3 degrees of freedom per leg. It can increase and decrease its height It can walk front, back, left, right.</li>
+                                          
+                                          
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-------12th card-----------checking the code------------------------------------------------------------------->
+                                  
+                                  <!------------14th card-------------------------------------------------------------->
+                                </div>
+                                <div class = "col"> </div>  
+                              </div>
+                            </div>
+                          </div>
+                          <!---code for footer
+                            
+                            
+                            
+                            <div class="ro" cellpadding="0" cellspacing="0" style=" position:relative; z-index: 5;">
+                              <div class="colum" style="background-color: #021238;">
+                                <div id="info"  style = "padding-left: 10px;">
+                                  <a id="wh" href="#a">Contact info</a><br>
+                                  <a href="mailto:aero.club@iitb.ac.in" class="fa fa-google"></a>&nbsp; &nbsp;<a id="wh" href="#a">Email Adress</a><br>
+                                  
+                                </div>  
+                              </div>
+                              <div class="colum" style="background-color: #021238;">
+                                <div id="social"  style = "padding-left: 10px;">
+                                  
+                                  <a href="https://www.facebook.com/aeromodellingiitb" class="fa fa-facebook"  target="_blank"> </a> &nbsp;&nbsp;
+                                  <a href="https://www.instagram.com/aeroclub.iitb/" class="fa fa-instagram"  target="_blank"></a> &nbsp;&nbsp;
+                                  <a href="https://www.youtube.com/channel/UCGlytraxeGRZHF8HG5qrfQA/featured" class="fa fa-youtube"  target="_blank"> </a>
+                                </div>  
+                              </div>
+                              <div class="colum" style="background-color: #021238;color:aliceblue">
+                                <div id="mail">
+                                  <p id="wh" style = "padding-left: 10px;">SUBSCRIBE TO OUR NEWSLETTER</p>
+                                  <form action="/action_page.php">
+                                    <label for="email" style = "padding-left: 10px;">Enter your email:</label>
+                                    <input type="email" id="email" name="email" ><br>
+                                    <input type="submit" style = "margin-left: 10px;">
+                                  </form>
+                                </div>  
+                              </div>
+                              <div class="colum" style="background-color: #021238;">
+                                <div id="adress"  style = "margin-left: 10px;">
+                                  <p id="wh" style = "padding-left: 10px;" >ADDRESS<br> Tinkerer's Lab, IIT Bombay Mumbai, Maharashtra 400076.
+                                  </p>
+                                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D19.134156119975%252C72.916609657821%26fbclid%3DIwAR3SuQG9raHjUvR0wpTA23hpnTw9dxyKb8oGOASrFTK-yt6_VtlUhW_lpj8&h=AT01Nx9YtS7EJDCBjZEiTUxW4rXwYzyjASAx53Azt48PVlJoAo7sixtL_VuMWb0z7ir3kI_uziXRyF203kg-4wp6Xl4hJABipCUdYo42qNQQ2wZC2qPNx3rHrVMCOk6ynBZNVyzvRBMEGUesWk_Urg"><button style='font-size:15px'>Directions<i class='fas fa-directions'></i></button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          -->
+                          <!-------------------------------------------------------->
+                          
+                          <script src ="../../aero/js/jquery.min.js">
+                            
+                          </script>
+                          <script>
+                            $("a[id!='dropdown03']").click(function(event){
+                              event.stopPropagation();
+                              
+                            });
+                            
+                            
+                            const elems = document.getElementsByClassName("click")
+                            
+                            elems[0].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              elem = elem[0]
+                              elem_inv = elem_inv[0]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              
+                              elem_inv1[0].classList.toggle("invisible1");
+                              elem_inv1[1].classList.toggle("invisible1");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[1].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[0].classList.toggle("invisible1");
+                              elem_inv1[1].classList.toggle("invisible1");
+                              elem = elem[0]
+                              elem_inv = elem_inv[0]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[2].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[2].classList.toggle("invisible1");
+                              elem_inv1[3].classList.toggle("invisible1");
+                              elem_inv = elem_inv[1]
+                              elem = elem[1];
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            });
+                            elems[3].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              elem = elem[1];
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[2].classList.toggle("invisible1");
+                              elem_inv1[3].classList.toggle("invisible1");
+                              elem_inv = elem_inv[1]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            
+                            elems[4].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[4].classList.toggle("invisible1");
+                              elem_inv1[5].classList.toggle("invisible1");
+                              elem_inv = elem_inv[2]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[2];
+                              
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            elems[5].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[4].classList.toggle("invisible1");
+                              elem_inv1[5].classList.toggle("invisible1");
+                              elem_inv = elem_inv[2]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[2];
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            
+                            
+                            elems[6].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[6].classList.toggle("invisible1");
+                              elem_inv1[7].classList.toggle("invisible1");
+                              elem = elem[3]
+                              elem_inv = elem_inv[3]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[7].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[6].classList.toggle("invisible1");
+                              elem_inv1[7].classList.toggle("invisible1");
+                              elem = elem[3]
+                              elem_inv = elem_inv[3]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[8].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[8].classList.toggle("invisible1");
+                              elem_inv1[9].classList.toggle("invisible1");
+                              elem_inv = elem_inv[4]
+                              elem = elem[4];
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            });
+                            elems[9].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              elem = elem[4];
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[8].classList.toggle("invisible1");
+                              elem_inv1[9].classList.toggle("invisible1");
+                              elem_inv = elem_inv[4]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            
+                            elems[10].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[10].classList.toggle("invisible1");
+                              elem_inv1[11].classList.toggle("invisible1");
+                              elem_inv = elem_inv[5]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[5];
+                              
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            elems[11].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[10].classList.toggle("invisible1");
+                              elem_inv1[11].classList.toggle("invisible1");
+                              elem_inv = elem_inv[5]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[5];
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            
+                            
+                            
+                            elems[12].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[12].classList.toggle("invisible1");
+                              elem_inv1[13].classList.toggle("invisible1");
+                              elem = elem[6]
+                              elem_inv = elem_inv[6]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[13].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              var elem_inv1 =document.getElementsByClassName("inv1")
+                              
+                              
+                              
+                              elem_inv1[12].classList.toggle("invisible1");
+                              elem_inv1[13].classList.toggle("invisible1");
+                              elem = elem[6]
+                              elem_inv = elem_inv[6]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[14].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[7]
+                              elem = elem[7];
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            });
+                            elems[15].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              elem = elem[7];
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[7]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            
+                            elems[16].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[8]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[8];
+                              
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            elems[17].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[8]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[8];
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            
+                            
+                            elems[18].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              elem = elem[9]
+                              elem_inv = elem_inv[9]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[19].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              elem = elem[9]
+                              elem_inv = elem_inv[9]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[20].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[10]
+                              elem = elem[10];
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            });
+                            elems[21].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              elem = elem[10];
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[10]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            
+                            elems[22].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[11]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[11];
+                              
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            elems[23].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              
+                              elem_inv = elem_inv[11]
+                              
+                              elem_inv.classList.toggle("invisible");
+                              elem = elem[11];
+                              elem.classList.toggle("togclass");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+                            }); 
+                            
+                            
+                            elems[24].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              elem = elem[12]
+                              elem_inv = elem_inv[12]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            elems[25].addEventListener("click", function(){
+                              var elem = document.getElementsByClassName("expand")
+                              var elem_inv =document.getElementsByClassName("inv")
+                              elem = elem[12]
+                              elem_inv = elem_inv[12]
+                              elem.classList.toggle("togclass");
+                              elem_inv.classList.toggle("invisible");
+                              elem.classList.toggle("col-6")
+                              elem.classList.toggle("col-12")
+                              
+                              elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                            }); 
+                            
+                            function myFunction() {
+                              var x = document.getElementById("navDemo");
+                              if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                              } else { 
+                                x.className = x.className.replace(" w3-show", "");
+                              }
+                            }
+                            
+                            // When the user clicks anywhere outside of the modal, close it
+                            var modal = document.getElementById('ticketModal');
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                            
+                            
+                            
+                          </script>
+                          
+                          
+                          
+                          
+                          
+                          
+                        </body>
+                        </html>
+                        

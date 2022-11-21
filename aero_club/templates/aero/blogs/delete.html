@@ -1,0 +1,29 @@
+{% include 'aero/components/header.html' %}
+
+<div class="container">
+
+    <div class="row" style="padding-top: 68px;">
+        <div class="col-sm-12">
+            <h1 class="blog-heading" style="text-align: center;">{{ object.title }}</h1>
+            <br />
+
+            <h6 class="blog-author" style="text-align: center;">{{ object.author }}</h6>
+            <div class="row">
+                <div class="col-md-3">
+                    {% if object.cover_img %}
+                    <img class="img-fluid" src="{{ object.cover_img.url }}">
+                    {% endif %}
+                </div>
+                <class class="col-md-9">
+                    <p class="text-justify">{{ object.short_description | safe }}</p>
+                </class>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <form method="post">{% csrf_token %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        <button type="submit" class="save btn btn-default">Delete</button>
+    </form>
+</div>
+{% include 'aero/components/footer.html' %}

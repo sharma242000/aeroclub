@@ -1,0 +1,375 @@
+    <!doctype html>
+    <html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title >Team 2021 | Aeromodelling Club IIT Bombay</title>
+        <link rel="stylesheet" href="icofont.css">
+        <link rel="stylesheet" href="{% static 'aero/css/sanchi.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
+        <style>
+            ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+            @media only screen and (max-width: 900px) {  #heading{
+        text-align: center;
+        position: static;
+        transform: translate(0%, 0%);
+          font-size: 2em;
+            color: teal;
+          }
+        }    
+
+       
+            .fa {
+                
+                font-size: 20px;
+                width: 20px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+            }
+            
+            .fa:hover {
+                opacity: 0.7;
+            }
+            
+            .fa-facebook {
+                
+                color: white;
+            }
+            
+            .fa-google {
+                
+                color: white;
+            }
+            
+            .fa-instagram {
+                
+                color: white;
+            }
+            
+            .navbar{
+                background-color: #141414!important;
+            }
+            input{color:black;}
+            button{color:black;}
+        @media(min-width: 1750px){
+            .dsc{
+                font-size: 9px!important;
+            }
+        }
+        @media(max-width: 400px){
+            .dsc{
+                font-size: 6px!important;
+            }
+        }
+        .bg{	pointer-events: none;
+	width: 77vw;
+	left: 11vw;
+	top: 4vh;
+	z-index: -999;
+	position: fixed;
+	opacity: 0.07;
+    }
+    #heading{
+        font-family: pirulen;
+    }
+    .ytp-cued-thumbnail-overlay-image{
+        z-index: 5;
+        position: absolute;
+    }
+        </style>
+        {% include 'aero/components/ga_code.html' %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body style="background: black!important;">
+        
+        <img src = "../../aero/css/images/background.png" class = 'bg'>
+        
+        {% include 'aero/components/navbar.html' %}
+        
+        
+        <div class="container-fluid">
+            <div id="heading" class='heading'>
+                TEAM 2021
+            </div>
+            <div id="main">
+                <div class="img">
+                    <div class="name">
+                        Gaurav Sharma
+                    </div>
+                    <img src="{% static 'aero/img/Gaurav.jpg' %}" alt="Gaurav Sharma">
+                    <div class="dsc">
+                        hi, I'm Gaurav from Jaipur.<br> pursuing Aerospace eng. I love music,<br> Football and having interest <br>
+                         in coding.
+                        <br>
+                        <a href="https://m.facebook.com/100047506506123/" class="fa fa-facebook"></a>
+                        <!-- <a href="" class="fa fa-instagram"></a> -->
+                        <a href="mailto:sharmagauravfeb22@gmail.com  " class="fa fa-google"></a>
+                    </div>
+                </div>
+                <!-- umesh -->
+                <div class="img">
+                    <div class="name">
+                        Umesh Ghaskata
+                    </div>
+                    <img src="{% static 'aero/img/umesh.jpg' %}" alt="Umesh Ghaskata">
+                    <div class="dsc">
+                        Hello , I’m umesh, one of the sophomore <br> of aerospace department. I’m from <br> Surat, Gujarat. I love cricket, <br> music, historical fiction,  explore <br>different fields and  aeromodelling. <br>
+                        <a href="https://www.facebook.com/umesh.ghaskata.7" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=1n5sz904hvnop&utm_content=lz6ylmd" class="fa fa-instagram"></a>
+                        <a href="mailto:200010027@iitb.ac.in" class="fa fa-google"></a>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <div class="name">
+                        Anjali Antil
+                    </div>
+                    <img src="{% static 'aero/img/Anjali.jpg' %}" alt="Anjali Antil">
+                    <div class="dsc">
+                        "The sky is infinite, and so is your potential<br> to realize your dreams. Keep hustling and <br>keep smiling."
+                        :Probably this quote <br>runs my entire life<br>
+                        <!-- <a href="https://www.facebook.com/annaaniruddh.radhakrishnan" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/quantum_particle_/" class="fa fa-instagram"></a> -->
+                        <a href="mailto:anjaliantil123@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Mihir Gupta
+                    </div>
+                    <img src="{% static 'aero/img/mihir.jpeg' %}" alt="Mihir Gupta">
+                    <div class="dsc">
+                        Hi, I m Mihir Gupta, <br> pursuing Aerospace eng. I love cricket, <br>
+                        lawn tennis, aeromodelling,robotics<br> and exploring new things . <br> 
+                        <!-- <a href="https://www.facebook.com/rohit.jaiswal.942145" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/jaiswal_rohit07?igshid=jesjfraxc7mf" class="fa fa-instagram"></a> -->
+                        <a href="mailto:mihirgupta04082001@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Harshit Singh
+                    </div>
+                    <img src="{% static 'aero/img/Harshit.jpeg' %}" alt="Harshit Singh">
+                    <div class="dsc">
+                        Hey Guys! My name is Harshit Singh, <br> an Aerospace Eng. student. For quite a time <br> aeromodelling is my major hobby. I make <br>planes  and flying wings and  excited to<br> dive into the realms of FPV quads <br> 
+                        <a href="https://www.facebook.com/profile.php?id=100069001453344" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/harshitsingh.111001/" class="fa fa-instagram"></a>
+                        <a href="mailto:harshitsingh.111001@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                
+                <div class="img">
+                    <div class="name">
+                        Jai Jobanputra
+                    </div>
+                    <img src="{% static 'aero/img/jai.jpeg' %}" alt=" Jai Jobanputra">
+                    <div class="dsc">
+                       <b>(Manager)</b> <br>
+                        Hi this is Jai, from Chattisgarh, Bilaspur,<br> aerospace department. My hobbies<br> are chess and reading<br>
+                        <a href="https://www.facebook.com/jai.jobanputra" class="fa fa-facebook"></a>
+                        
+                        <a href="mailto:jai23oct@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                
+                <!-- piyush -->
+                <div class="img">
+                    <div class="name">
+                        Piyush Porwal 
+                         
+                    </div>
+                    <img src="{% static 'aero/img/Piyush.jpg' %}" alt="Piyush Porwal">
+                    <div class="dsc">
+                        <b>(Manager)</b> <br>
+                        I'm aerospace dept. thirdie from Neemuch(MP).<br> I am Aeromodelling enthusiast, loves
+                        Web,<br>designing, building creative stuff and <br>learning and exploring new things.<br>
+                        <a href="https://www.facebook.com/piyush.porwal.5680899/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/piyush_porwal__/" class="fa fa-instagram"></a>
+                        <a href="mailto:pp14ush@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <div class="name">
+                        Ajay Tak
+                    </div>
+                    <img src="{% static 'aero/img/Ajay.jpg' %}" alt="Ajay Tak">
+                    <div class="dsc">
+                        Hello I am Ajay Tak, 2 nd year undergraduate,<br> pursuing aerospace engineering. I love to<br> play cricket, badminton and any other<br>   outdoor Sports.<br>
+                        
+                        <a href="mailto:ajytak@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Swarna Dhruv
+                    </div>
+                    <img src="{% static 'aero/img/swarna.jpg' %}" alt="Swarna Dhruv">
+                    <div class="dsc">
+                        I Love music, reading, writing, <br>cooking and travelling. 
+                        Love to explore<br> new things whether robotics <br>Or coding.<br> 
+                        <a href="mailto:swarnadhruw2909@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Rajeev Dhurandhar
+                    </div>
+                    <img src="{% static 'aero/img/Rajeev.jpg' %}" alt="Rajeev Dhurandhar">
+                    <div class="dsc">
+                        Hey! Rajeev Dhurandhar here, a 2nd year <br> undergraduate from Mechanical Department<br> having a great interest about launch<br> vehicles and all related to that.<br>
+                        <a href="https://www.facebook.com/rajeev.dhurandhar.98" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/rajeev_1682/" class="fa fa-instagram"></a>
+                        <a href="mailto:rajeevdhurandhar48@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Ammar Barbhaiwala
+                    </div>
+                    <img src="{% static 'aero/img/ammar.jpg' %}" alt="Ammar Barbhaiwala">
+                    <div class="dsc">
+                        Hello Everyone, I'm Ammar Barbhaiwala <br>from Surat Gujarat, I'm a pursuing a bachelors<br> degree in Aerospace Engineering, I am a <br>Physics Enthusiast and I love watching<br> movies, reading books, writing articles <br>
+                        <a href="https://m.facebook.com/ammar.barbhaiwala" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/ammar_barbhaiwala?utm_medium=copy_link" class="fa fa-instagram"></a>
+                        <a href="mailto:200010010@iitb.ac.in" class="fa fa-google"></a>
+                    </div>
+                </div>
+                
+                <div class="img">
+                    <div class="name">
+                        Akshat Verma
+                    </div>
+                    <img src="{% static 'aero/img/Akshat.jpg' %}" alt="Akshat Verma">
+                    <div class="dsc">
+                        Hey! I am Akshat Verma, from Muzaffarnagar,<br> Uttar Pradesh pursuing Mechanical Engg.<br> Along with a great love and passion for<br> aerospace and aeromodelling, I am keen<br> to take up challenges <br>
+                        <a href="https://www.facebook.com/profile.php?id=100057183097292" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/akshat_1602?utm_medium=copy_link" class="fa fa-instagram"></a>
+                        <a href="mailto:akshatneeldev@gmail.com" class="fa fa-google"></a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="name">
+                        Isha Mukherjee
+                    </div>
+                    <img src="{% static 'aero/img/Isha.png' %}" alt="Isha Mukherjee">
+                    <div class="dsc">
+                        Hi, I am Isha Mukherjee,pursuing Aerospace Engineering..I am interested in <br> learning  new things and exploring new <br>places.  I love reading and swimming. <br> I am  a space lover  <br>
+                        <a href="https://www.facebook.com/isha.mukherjee.1023" class="fa fa-facebook"></a>
+                        
+                        <a href="mailto:200010034@iitb.ac.in" class="fa fa-google"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--{% include 'aero/components/footer.html' %}-->
+
+            
+           
+        
+    </body>
+    </html>
+        
+        
+        
+        
+        
+        
+        
+        <script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function () { 
+                $('.img').each(function(index) {
+                    if (index < 4) {
+                        index += 1;
+                        $(this).css('margin-top', (index / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                        $(this).css('margin-left', (index * parseFloat($(this).css('width'))).toString() + 'px');
+                    } else if (index < 9) {
+                        index -= 4;
+                        $(this).css('margin-top', ((2 + index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                        $(this).css('margin-left', (index * parseFloat($(this).css('width'))).toString() + 'px');
+                    } else {
+                        index -= 9;
+                        $(this).css('margin-top', ((4 + index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                        $(this).css('margin-left', ((index) * parseFloat($(this).css('width'))).toString() + 'px');
+                    }
+                }).css('opacity', '1').hover(function () {
+                    let w = $(this).css('height');
+                    $(this).find('.name').css('margin-top', (parseFloat(w) / 1.99 - parseFloat($(this).find('.name').css('height'))).toString() + 'px');
+                    $(this).find('.dsc').css('margin-top', (-parseFloat(w) / 1.99).toString() + 'px');
+                }, function () {
+                    $(this).find('.name').css('margin-top', '-300px');
+                    $(this).find('.dsc').css('margin-top', '100%');
+                });
+                onResize();
+                $(window).resize(onResize);
+            });
+            
+        </script>
+        
+        <script>
+            function onResize() {
+                if($(window).width() < 800){
+                    var w = $(window).width()*0.5;
+                    $("#main img").css("width", w+"px");
+                    $("#main img").css("height", w*0.9+"px");
+                    $("#main").css("height", ($('.img').length+1) * w * 1.1)
+                    $('.img').each(function(index) {
+                        // if (index < 14) {
+                            $(this).css('margin-top', (150 + index * (w*1.1)).toString() + 'px');
+                            $(this).css('margin-left', w *0.25); //(index * parseFloat($(this).css('width'))).toString() + 'px');
+                            // }\
+                            
+                        })
+                    }else{
+                        $("#main img").css("width", "15vw");
+                        $("#main img").css("height", "auto");
+                        
+                        $('.img').each(function(index) {
+                            if (index < 4) {
+                                index += 1;
+                                $(this).css('margin-top', (index / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                                $(this).css('margin-left', (index * parseFloat($(this).css('width'))).toString() + 'px');
+                            } else if (index < 9) {
+                                index -= 4;
+                                $(this).css('margin-top', ((2 + index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                                $(this).css('margin-left', (index * parseFloat($(this).css('width'))).toString() + 'px');
+                            } else {
+                                index -= 9;
+                                $(this).css('margin-top', ((4 + index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                                $(this).css('margin-left', ((index) * parseFloat($(this).css('width'))).toString() + 'px');
+                            }
+                        })
+                    }
+                }
+                
+                
+                
+                
+                
+            </script>
+      

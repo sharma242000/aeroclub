@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{% static 'aero/css/bhagat.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <!-- more curvy font -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    {% include 'aero/components/ga_code.html' %}
+    <style>
+        ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+        nav{
+            z-index: 999!important;
+        }
+        .colum{
+            background-color: #017582!important;
+        }
+        #fixed {
+            
+            height: auto;
+          
+           
+            background-color: black;
+          
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: transform;
+            
+        }
+        .bg{	pointer-events: none;
+	width: 77vw;
+	left: 11vw;
+	top: 4vh;
+	z-index: 1;
+	position: fixed;
+	opacity: 0.07;
+        }
+    .bi{
+        
+        margin-bottom:-2px!important;
+    }
+
+    </style>
+</head>
+
+<body>
+    
+ 
+    
+    <div class="container-fluid " style="background:  black;">
+        <header>
+            {% include 'aero/components/navbar.html' %}
+        </header>
+        <img src = "../../aero/css/images/background.png" class = 'bg'>
+        <header id="about">
+            About
+        </header>
+
+<!---  
+Added crypt Hunt
+ --->
+ <div class="container-fluid " style="position: relative!important;" >
+ <center>
+ <div class=" text-white" style="max-width: 400px;" >
+ <h3 class="text-danger"><b>Crypt Hunt</b></h3>
+ <div class="">
+ <i style="font-size: large;">
+ A design for the start to the very long journey into the dark dark void. Every traveler to 
+ these put of the world places must rely on these structures to bear the flaming wrath of their vehicles.
+ Find it on our websites...
+ </i>
+ </div>
+ </div>
+ </center>
+ </div>
+
+        <div class="row" style="margin-right: 0vh;margin-left: 0px;">
+            <div class="col-lg-8 text" style="padding-left: 0vh;margin-left: 7vh;">
+                The Aeromodelling Club of IIT Bombay is one of the premier clubs for technical exploration in the institute. It deals with anything that is capable of flight from drones and planes to rockets and boomerangs. It draws participation from over a thousand students across branches for various events and technical activities. The club believes in a hands-on approach to flight and gives members the resources and more importantly the peer group to take any idea sky high. 
+                <br></br>
+                The flagship event of the club for freshmen is the RC Plane Competition which gives students a hands-on introduction to flight. Here students build and fly their first aeroplanes after learning the fundamentals of flight from club seniors who mentor teams throughout the process. The club also conducts airshows, drone hackathons, water rocket competitions, flying sessions, tech workshops, quizzes and lectures by experts in the aerospace industry throughout the year. The club has seen success at national level aeromodelling competitions over the years like the Boeing Aeromodelling Challenge and is always open to ideas for interesting projects. Over the years it has seen work done on Ion Propulsion, Bionics for flight, VTOL aircraft and high-performance quadcopters. If you find flight fascinating and are excited by challenges the Aeromodelling Club is the place for you.
+                
+                
+                
+                
+            </div>
+            <!-- <div class="col-lg-1 text">
+                
+            </div> -->
+            <div class="col-lg-3 text" >
+                <div class="youtube  " id="leftyt">
+                    
+                    <iframe src="https://www.youtube.com/embed/bZF_LHwiP9U" frameborder="0" width="320" height="200"></iframe>
+                    <allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row" style="margin-bottom: 40px;margin-left: 0px;margin-right: 0px;">
+                <div class="testimonial col-lg-4">
+                    <br>
+                    <br>
+                    <div class="backcol">
+                        
+                        
+                        <div class="pic">
+                            <img src="{% static 'aero/css/images/Propant.jpg' %} " alt="">
+                        </div>
+                        <p class="description" style="margin-bottom: 42px;">
+                            Aeromodelling Club is a community of hobbyists, interested in the field of Aerospace and Aerial Robotics. Since its inception, the club has been giving an exposure and providing training about aeromodeling to freshers. The club's activities promote a practical approach while highlighting the significance of theoretical knowledge one gains in the institute. We also support students who wish to design, build and fly their innovative ideas
+                            
+                            
+                        </p>
+                        <div class="name" id="first_name">Prof. R. K. Pant </div>
+                        <span class="name" >Chairman, Institute Technical Council </span>
+                    </div>
+                </div>
+                <div class="testimonial col-lg-4">
+                    <br>
+                    <br>
+                    <div class="backcol">
+                        
+                        <div class="pic">
+                            <img src="{% static 'aero/css/images/team1.jpg' %}" alt="">
+                        </div>
+                        <p class="description" >
+                            Aeromodelling Club, IIT Bombay provided me an incredible platform to satiate my curiosity for aviation, aeromodelling and technology! From building a RC Plane and Quadcopter in my first year to becoming the Aeromodelling Club Head in my junior year, I was able to explore and contribute a ton to the Aeromodelling community of the Institute! I am sure that a student enthusiastic about Aeromodelling will be able to find like-minded people, adequate resources and excellent opportunities within the club!
+                        </p>
+                        <div class="name" id="first_name">Yash Samriya</div>
+                        <span class="name" >Aeromodelling Club Secretary 2018-19</span>
+                    </div>
+                </div>
+                <div class="testimonial col-lg-4">
+                    <br>
+                    <br>
+                    <div class="backcol">
+                        
+                        
+                        <div class="pic">
+                            <img src="{% static 'aero/css/images/team3.jpg' %}" alt="">
+                        </div>
+                        <p class="description" style="margin-bottom: 42px;">
+                            I started my journey of Aviation and Aeromodelling with Aeromodelling Club, this club provided me a platform to develop my flying skills and gave me an opportunity to live my dream and passion even before getting the feel of aerospace department. Club Inspired me to share my knowledge and experience to everyone out side the campus even after the graduation. Later the learnings helped me to shape my career in same field and establish Drona Aviation.
+                        </p>
+                        <div class="name" id="first_name">Dinesh Sain</div>
+                        <span class="name" >Founder of Drona Aviation</span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- footer-->
+            {% include 'aero/components/footer.html' %}
+            
+            
+            
+          
+    </body>
+    
+    </html>

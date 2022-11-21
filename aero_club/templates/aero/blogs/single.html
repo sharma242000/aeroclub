@@ -1,0 +1,100 @@
+{% include 'aero/components/header.html' %}
+<style>
+    @media(max-width:460px){
+        .left-img{
+            margin-left:5vw!important;
+            width: 300px!important;
+           
+        }
+	body > div > div:nth-child(2) > div.col-sm-7 > div > p{
+            margin-left:20px;
+	    margin-right:20px;
+        }
+        .blog-heading{
+          font-size:30px !important;
+  }
+    }
+    .col-sm-7 > div:nth-child(1) > p:nth-child(2){
+        font-family: 'Varela', sans-serif !important;
+        overflow:auto!important;
+	 word-wrap: break-word;
+	 width: 60vw;
+     
+    }
+    @media(max-width:572px){
+        .col-sm-7 > div:nth-child(1) > p:nth-child(2){
+        font-family: 'Varela', sans-serif !important;
+        overflow:auto!important;
+	    word-wrap: break-word;
+		width: 400px;}
+	body > div > div:nth-child(2) > div.col-sm-7 > div > p{
+            margin-left:20px;
+	    margin-right:20px;
+        }
+        
+    }
+    @media(max-width:430px){
+        .col-sm-7 > div:nth-child(1) > p:nth-child(2){
+        font-family: 'Varela', sans-serif !important;
+        overflow:auto!important;
+	    word-wrap: break-word;
+		width: 300px;}
+	body > div > div:nth-child(2) > div.col-sm-7 > div > p{
+             margin-left:20px;
+	    margin-right:20px;
+        }
+        
+    }
+</style>
+<div class="container-fluid aero-margin">
+    <div class="row" style="padding-top: 68px;">
+            <div class="col-md-12">
+                <h1 class="blog-heading" style="text-align: center;">{{ object.title }}</h1>
+                <br>
+                <h4 class="blog-subtitle" style="text-align: center;">
+                    <i class="fa fa-user" aria-hidden="true"></i> {{ object.author }} |
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> {{ object.created_at | date:"M d, Y" }}
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+
+                <div class = "row" style = "padding-left: 5%;"><img src="{{ object.cover_img.url }}"  class="img-fluid" style = "width: 90%; margin: 10px;"></div>  
+                <div class = "container" style = "padding-left: 5%;overflow-wrap: break-word;"><p class="short-dec" >{{ object.short_description }}</p></div>
+                    <h3 class="share-text">Share on Social Media</h3>
+                    <ul class="share">
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/sharer.php?u={{ request.build_absolute_uri }}">
+                                <span class="fa fa-facebook-official fa-2x" style="font-size: 30px;"></span>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a
+                                href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ object.title }}&via=">
+                                <span class="fa fa-twitter fa-2x" style="font-size: 30px;"></span>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a
+                                href="https://www.linkedin.com/shareArticle?url={{ request.build_absolute_uri }}&title={{ object.title }}">
+                                <span class="fa fa-linkedin fa-2x" style="font-size: 30px;"></span>
+                            </a>
+                        </li>
+                        <li class="whatsapp">
+                            <a href="whatsapp://send?text={{ request.build_absolute_uri }}">
+                                <span class="fa fa fa-whatsapp fa-2x" style="font-size: 30px;"></span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <p>{{ object.content | safe }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

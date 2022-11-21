@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        
+        <ul class="share" style = "margin-top: 30px;">
+            <li><a href="{%  url 'new' %}"><h4 class="add">+ ADD BLOG</h1></a></li>
+            {% if object %}
+            <li><a href="{% url 'edit' object.id %}">Update Post</a></li>
+            <li><a href="{% url 'delete' object.id  %}">Delete Post</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

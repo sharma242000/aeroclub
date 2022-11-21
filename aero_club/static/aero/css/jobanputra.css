@@ -1,0 +1,497 @@
+
+@font-face {
+  font-family: Azonix;
+   src:url("pirulen rg.ttf") format("truetype");
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+.box-side{
+	background: #01ACBE 0% 0% no-repeat padding-box;
+	height: 80%;
+	border-left: 0px;
+	border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    	
+    	border-bottom-right-radius: 100px;
+	width: 50%;
+}
+
+body{
+	background: black 0% 0% no-repeat padding-box;
+	
+
+}
+
+
+#project-text{
+	font-family: Azonix;
+	letter-spacing: 0px;
+	color: white;
+	opacity: 1;
+	font-size: 4vw;
+	
+}
+.card-text{
+	font-size: 1vw !important;
+	font-family: 'Varela', sans-serif;
+
+}
+.card-title{
+	font-size: 1.2vw !important;
+	font-family: 'Varela', sans-serif;
+
+}
+
+.card{
+	background: #141414 0% 0% no-repeat padding-box;
+
+}
+
+#card-right{
+	background: white;
+	
+}
+.expand{
+	height: 350px;
+	overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  transition: .5s ease;
+  background-color: #01ACBE;
+  }
+.no-gutters:hover .overlay {
+  opacity: 0;
+}
+.togclass{
+	background: white;
+	width: 100%;
+  	z-index: 2;
+  	opacity: 1 !important;
+  	height: 100vh;
+  	overflow: scroll;
+}
+
+
+.icon:hover{
+	height: 1.62vw !important;
+	margin-top: .15vw !important;
+	margin-right:.25vw !important;
+	padding:0!important;
+}
+.icon1:hover{
+	width: 1.75vw !important;
+	margin-right: .26vw !important;
+	margin-top: 0!important;
+	
+}
+
+
+.icon{
+	z-index: 15;
+	height: 1.4vw!important;
+	border: 0;
+	margin-right:.5vw!important;
+	margin-top: .4vw!important;
+}
+.icon1{
+	z-index: 15;
+	width: 1.5vw;
+	border: 0;
+	color: red;
+	
+	 margin-right:.5vw;
+	 margin-top: .25vw;
+}
+
+
+.bg{	pointer-events: none;
+	width: 77vw;
+	left: 11vw;
+	top: 4vh;
+	z-index: -999;
+	position: fixed;
+	opacity: 0.07;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  height: 150px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.invisible{
+	opacity: 0;
+}
+
+
+
+.card1{
+	background: url("images/iris2.JPG");
+	background-size:cover; 
+
+}
+.card2{
+	background: url("images/iris5.png");
+	background-size:cover; 
+
+}
+.card3{
+	background: url("images/tailsitter.jpg");
+	background-size:cover; 
+
+}
+.card4{
+	background: url("images/fpv.jpg");
+	background-size:cover; 
+
+}
+.card5{
+	background: url("images/skyrush.jpg");
+	background-size:cover; 
+
+}
+.card6{
+	background: url("images/boeing6.JPG");
+	background-size:cover; 
+
+}
+.card7{
+	background: url("images/tfd1.jpg");
+	background-size:cover; 
+
+}
+.card8{
+	background: url("images/ion.JPG");
+	background-size:cover; 
+	
+
+}
+.card9{
+	background: url("images/gd2.JPG");
+	background-size:cover; 
+
+}
+.card10{
+	background: url("images/bionicopter1.jpg");
+	background-size:cover; 
+
+}
+.card11{
+	background: url("images/how.JPG");
+	background-size:cover; 
+
+}
+.card12{
+	background: url("images/iris2.JPG");
+	background-size:cover; 
+
+}
+.card13{
+	background: url("images/iris2.JPG");
+	background-size:cover; 
+
+}
+@media (max-width: 1198px){
+.expand{
+	overflow: hidden;
+	height: 300px;
+}
+.togclass{
+	background: white;
+	width: 100%;
+  	z-index: 2;
+  	opacity: 1 !important;
+  	height: 100vh;
+  	overflow: scroll;
+}
+}
+@media (max-width: 990px){
+.expand{
+	overflow: hidden;
+	height: 250px;
+}	
+.togclass{
+	background: white;
+	width: 100%;
+  	z-index: 2;
+  	opacity: 1 !important;
+  	height: 100vh;
+  	overflow: scroll;
+}
+}
+@media (max-width: 766px){
+.expand{
+	overflow: hidden;
+	height: 160px;
+}	
+.togclass{
+	background: white;
+	width: 100%;
+  	z-index: 2;
+  	opacity: 1 !important;
+  	height: 100vh;
+  	overflow: scroll;
+}
+}
+@media(max-width: 572px){
+.expand{
+	overflow: hidden;
+	height: 29vw;
+}	
+.togclass{
+	background: white;
+	width: 100%;
+  	z-index: 2;
+  	opacity: 1 !important;
+  	height: 100vh;
+  	overflow: scroll;
+}
+}
+
+
+    
+    @media (max-width: 380px) {
+    
+
+.icon{
+	z-index: 15;
+	height:18px!important;
+	width: auto !important;
+	border: 0;
+	color: red;
+	margin-right:20px;
+	margin-left: 0px;
+	margin-bottom: -1vw;
+}
+.icon1{
+	z-index: 15;
+	width:30px!important;
+	border: 0;
+	color: red;
+	margin-right: 2px;
+	margin-left: 5px;
+	margin-top: -40px;
+	margin-bottom: -50px;
+}
+}
+@media (max-width: 600px) {
+	#project-text{
+	font-family: Azonix;
+	letter-spacing: 0px;
+	color: white;
+	opacity: 1;
+	font-size: 20px;
+}
+
+ .colum {
+ width:100%;
+ }
+img{
+
+
+	width: 100%;
+	height: auto;
+}
+
+.card-text{
+
+	font-size: 2.5vw !important;
+	
+
+}
+.card-title{
+	font-size: 3vw !important;
+
+}
+
+a{
+	display: block;
+}
+.icon:hover{
+z-index: 15;
+	height:20px!important;
+	width: auto !important;
+	border: 0;
+	color: red;
+	margin-right:20px;
+	margin-left: 0px;
+	margin-bottom: -1vw;
+
+
+}
+.icon1:hover{
+z-index: 15;
+	width:40px!important;
+	border: 0;
+	color: red;
+	margin-right: 2px;
+	margin-left: 5px;
+	margin-top: -40px;
+	margin-bottom: -50px;
+
+}
+.icon{
+	z-index: 15;
+	height:20px!important;
+	width: auto !important;
+	border: 0;
+	color: red;
+	margin-right:20px;
+	margin-left: 0px;
+	margin-bottom: -1vw;
+}
+.icon1{
+	z-index: 15;
+	width:40px!important;
+	border: 0;
+	color: red;
+	margin-right: 2px;
+	margin-left: 5px;
+	margin-top: -40px;
+	margin-bottom: -50px;
+}
+
+.invisible1{
+
+opacity: 0;
+}	
+.invisible{
+opacity: 1;
+}  	
+}
+    @media (max-width: 350px) {
+    
+.icon:hover{
+	z-index: 15;
+	height:15px!important;
+	width: auto !important;
+	border: 0;
+	color: red;
+	margin-right:20px;
+	margin-left: 0px;
+	margin-bottom: -1vw;
+}
+.icon1:hover{
+	z-index: 15;
+	width:25px!important;
+	border: 0;
+	color: red;
+	margin-right: 2px;
+	margin-left: 5px;
+	margin-top: -40px;
+	margin-bottom: -50px;
+}
+.icon{
+	z-index: 15;
+	height:15px!important;
+	width: auto !important;
+	border: 0;
+	color: red;
+	margin-right:20px;
+	margin-left: 0px;
+	margin-bottom: -1vw;
+}
+.icon1{
+	z-index: 15;
+	width:25px!important;
+	border: 0;
+	color: red;
+	margin-right: 2px;
+	margin-left: 5px;
+	margin-top: -40px;
+	margin-bottom: -50px;
+}
+}
+#contac{
+    padding-top: 20px;
+    padding-left: 0.6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+  #wh{
+    text-decoration: none;
+    color:white;
+  }
+ #social{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  font-weight: bold;
+  color:white;
+  padding-top:6vh;
+  padding-left:3vw;
+}
+  .colum {
+    float: left;
+    width: 25%;
+    height: 140px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .ro:after {
+    content: "";
+    display: table;
+    clear: both;}
+.ro{
+	bottom: 0;
+	margin-top: 177px;
+   }
+  }
+  .container{
+    position: absolute;
+  text-align: center;
+  color: white;
+  }
+  .fa {
+    padding: 0.18vw;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    
+    color: white;
+  }
+  .fa-youtube {
+    
+    color: white;
+  }
+  
+  .fa-instagram {
+   
+    color: white;
+  }
+  .fa-google {
+   
+    color: white;}
+
+    #info{
+      padding-top: 2vw;
+      padding-left: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:medium;
+      font-weight: bold;
+    }

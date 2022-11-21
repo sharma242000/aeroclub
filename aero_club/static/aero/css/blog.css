@@ -1,0 +1,307 @@
+@font-face {
+  font-family: wallblog;
+  src: url('../fonts/wall_of_blogs.ttf');
+}
+@font-face {
+  font-family: azonix;
+  src: url('../fonts/Azonix.otf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+.blogwall{
+  font-family: wallblog;
+  
+}
+.add{
+  font-family: azonix;
+}
+.add:hover{
+  font-size: 30px; 
+}
+h1 {
+  text-align: center;
+  font: Regular 60px/24px Azonix;
+  letter-spacing: 0px;
+  color: #F1F9FF;
+  opacity: 1;
+  text-align:center !important;
+}
+
+.background {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #141414 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.blog-wall-flower {
+  
+  width: 100%;
+  padding: 10px;
+  background-color: aqua;
+}
+
+
+
+.card-title {
+  padding-left: 10px;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  font-family:  'Noto Sans JP', sans-serif;
+  color: #03dac5e3;
+  height: 60px;
+  margin-top:0;
+}
+.card{
+  border: 0;
+  
+}
+
+
+.card-text1{
+  color: white;
+  -moz-hyphens:auto;
+  -ms-hyphens:auto;
+  -webkit-hyphens:auto;
+  hyphens:auto;
+  word-wrap:break-word;
+  height:200px;
+  overflow:hidden;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.card-body{
+  padding: 0;
+  
+}
+
+
+a{
+  
+  color: white;
+  text-decoration: none;
+  
+}
+
+a:hover{
+  text-decoration:none;
+}
+/*footer*/
+#contac{
+  padding-top: 20px;
+  padding-left: 0.6vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:medium;
+  font-weight: bold;
+}
+#wh{
+  text-decoration: none;
+  color:white;
+}
+#socia{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:medium;
+  font-weight: bold;
+  color:white;
+}
+.colum {
+  float: left;
+  width: 25%;
+  height: 140px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.ro:after {
+  content: "";
+  display: table;
+  clear: both;}
+.ro{
+bottom: 0;
+margin-top: 177px;
+ }
+
+
+  #info{
+    padding-top: 2vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+  
+    
+/**added by Vishnu for bullet listing**/
+.share li {
+  display: inline;
+}
+.share li a {
+  color:  #01ACBE;
+}
+
+
+.card-header{
+  background-color: rgba(0, 0, 0, 0.918);
+}
+.card-title {
+  color: #03dac5e3;
+  background-color: rgba(0, 0, 0, 0.918);
+}
+.card-text1 {
+  color: #f1f9ff !important;
+  margin: 10px;
+}
+.card {
+  background: #ffffff0d;
+}
+
+.footer {
+  background: #f1f9ff;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+/* Added by Jai for single page */
+.back-icon {
+  
+  transform: matrix(0, 1, -1, 0, 0, 0);
+  background: #F1F1F1 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.first-image {
+  
+  margin-top: 10px;        
+  width: 100%;
+  height: 100%;
+  background: #37026E 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-bottom: 10px;
+  
+}
+.blog-heading {
+  
+  font-family: azonix;
+  letter-spacing: 4.67px;
+  font-size: 60px;
+  color: #F1F9FF;
+  opacity: 1;
+}
+
+.blog-author {
+  
+  
+  font: Regular 29px/38px Arial;
+  letter-spacing: 4.67px;
+  color: #01ACBE;
+  opacity: 1;
+}
+
+.blog-subtitle {
+  
+  font-family: 'Fredoka One', cursive;
+  font-size:20px;
+  color: #01ACBE;
+  
+  
+}
+
+.centerstuff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.share{
+  text-align: center;
+}
+.share li {
+  display: inline;
+}
+.share li a {
+  color:  #01ACBE;
+}
+.left-img{
+
+  width: 400px;
+
+}
+
+@media(max-width:1300px){
+  .left-img{
+    width: 30vw;
+  }
+  
+}
+@media(max-width:545px){
+  .left-img{
+    width: 300px;
+    margin-left: 20%;
+  }
+ 
+}
+
+/* adding css for social media share, by Vishnu */
+.share a {
+  color: #f1f9ff!important;
+}
+.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #fff;
+  padding: 0.5em 0.6em;
+  
+}
+.facebook .fa:hover  {
+  background-color: #0e1f56!important;
+}
+.twitter .fa:hover  {
+  background-color:#1DA1F2!important;
+}
+.linkedin .fa:hover  {
+  background-color: #2867B2!important;
+}
+.whatsapp .fa:hover  {
+  background-color: #48c557!important;
+}
+.short-dec {
+  font-style: italic;
+  font-family: "Noto Sans",serif;
+  font-size: small;
+  color: #019eae;
+}
+.share-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color:  #f1f9ff!important;
+  text-align: center;
+}
+.form-group label {
+  color:#f1f9ff!important;
+}
+.form-group input, textarea{
+  background-color: #262626 !important;
+  color: #a6a6a6 !important;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  
+}
+.btn {
+  background: #9ab59b;
+  color: white;
+}
+form {
+  margin: 10px;
+}

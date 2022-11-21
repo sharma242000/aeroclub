@@ -1,0 +1,32 @@
+/* Navbar */
+
+.navbar{
+    background-color: #141414 !important;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-brand:hover{
+    color: #01ACBE;
+}
+
+.navbar .navbar-nav li a{
+    color:white !important;
+    margin-left: 2vw;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-nav li a:hover{
+    color: #01ACBE !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: black !important;
+}

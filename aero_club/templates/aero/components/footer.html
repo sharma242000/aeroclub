@@ -1,0 +1,178 @@
+<style>
+	#contact{
+  padding-top: 5vh;
+  padding-left: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  font-weight: bold;
+}
+#wh{
+  text-decoration: none;
+  color:white;
+}
+#social{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  font-weight: bold;
+  color:white;
+  padding-top:6vh;
+  padding-left:3vw;
+}
+.colum {
+  float: left;
+  width: 25%;
+  height: 150px; /* Should be removed. Only for demonstration */
+  
+  
+}
+
+/* Clear floats after the columns */
+.ro:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.container{
+  position: absolute;
+text-align: center;
+color: white;
+}
+.fa {
+  padding: 0.18vw;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  
+  color: white;
+}
+.fa-youtube {
+  
+  color: white;
+}
+
+.fa-instagram {
+ 
+  color: white;
+}
+.fa-google {
+ 
+  color: white;}
+
+  #info{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+  #adress{
+    padding-top: 1vh;
+    padding-left: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+  }
+ 
+  #mail{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+  }
+  @media only screen and (max-width: 600px) {
+
+    #mail{
+      padding-top: 0vw;
+      padding-left: 0vw;
+    font-size: 10px;}
+      #adress{
+        padding-top: 0vh;
+        padding-left: 0vw;
+      font-size: 10px;}
+      #info{
+        padding-top: 4vh;
+        padding-left: 1vw;
+        font-size:10px;}
+        #social{
+          padding-top: 8vw;
+          font-size:small;
+        }}
+
+/* .sticky-top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+} */
+
+
+
+
+ @media only screen and (max-width: 400px) {  .colum{
+  width :100%;
+  height:100px;
+}
+}
+ @media only screen and (max-width: 600px) and (min-width: 400px) { .colum{
+    width:50%;
+    height:100px;
+  }
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="ro" cellpadding="5px" cellspacing="0" style="margin-top: 50px; position:relative;z-index: 999;">
+	<div class="colum" style="background-color: #021238;color:aliceblue">
+		<div id="info">
+			<a id="wh" href="#a">Contact info</a><br>
+			<a href="mailto:aero.club@iitb.ac.in" class="fa fa-google"></a>&nbsp; &nbsp;<a id="wh"
+			href="#a">Email Address</a><br>
+			
+		</div>
+	</div>
+	<div class="colum" style="background-color: #021238;color:aliceblue">
+		<div id="social">
+			
+			<a href="https://www.facebook.com/aeromodellingiitb" class="fa fa-facebook" target="_blank"> </a>
+			&nbsp;&nbsp;
+			<a href="https://www.instagram.com/aeroclub.iitb/" class="fa fa-instagram" target="_blank"></a>
+			&nbsp;&nbsp;
+			<a href="https://www.youtube.com/channel/UCGlytraxeGRZHF8HG5qrfQA/featured" class="fa fa-youtube"
+			target="_blank"> </a>
+		</div>
+	</div>
+	<div class="colum" style="background-color: #021238;color:aliceblue">
+		<div id="mail">
+			<p id="wh">SUBSCRIBE TO OUR NEWSLETTER</p>
+			<form action="/action_page.php">
+				<label for="email">Enter your email:</label>
+				<input type="email" id="email" name="email"><br>
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="colum" style="background-color: #021238;color:aliceblue">
+		<div id="adress">
+			<p id="wh">ADDRESS<br> Tinkerer's Lab, IIT Bombay Mumbai, Maharashtra 400076.
+			</p>
+			<a
+			href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D19.134156119975%252C72.916609657821%26fbclid%3DIwAR3SuQG9raHjUvR0wpTA23hpnTw9dxyKb8oGOASrFTK-yt6_VtlUhW_lpj8&h=AT01Nx9YtS7EJDCBjZEiTUxW4rXwYzyjASAx53Azt48PVlJoAo7sixtL_VuMWb0z7ir3kI_uziXRyF203kg-4wp6Xl4hJABipCUdYo42qNQQ2wZC2qPNx3rHrVMCOk6ynBZNVyzvRBMEGUesWk_Urg"><button
+			style='font-size:15px'>Directions<i class='fas fa-directions'></i></button>
+		</a>
+	</div>
+</div>
+</div>

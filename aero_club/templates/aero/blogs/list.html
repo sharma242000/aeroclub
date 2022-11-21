@@ -1,0 +1,76 @@
+{% include 'aero/components/header.html' %}
+
+<style>
+	.card-title>h5{
+		font-size: 20px;
+	}
+	@media(max-width: 1200px){
+
+		.card-title>h5{
+			font-size: 15px !important;
+		}
+	}
+    ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+    html{
+        bottom: 0!important;
+    }
+	@media(max-width: 580px){
+
+	.card-title>h5{
+	font-size: 18px !important;
+}
+
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+</style>
+<div class="text-center">
+    <h1 class="blogwall" style="margin-top:40px; margin-bottom: 40px;">The Wall of Blogs</h1>
+</div>
+<div class="container-fluid">
+    <div class="row">
+   
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 ">
+            <div class="container-fluid ">
+            <div class="row">
+                	 <div class="card-columns">
+                    {% for blog in object_list  %}
+                    
+                    <a href="{% url 'single' blog.id %}">
+                        <div class="card  cardstyle ">
+                            <img class="card-img-top img-fluid" src="{{ blog.cover_img.url }}" alt="{{ blog.title }}">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 >{{ blog.title }}</h5>
+                                </div>
+                                <p class="card-text1" style = "overflow:auto; word-wrap: break-word;"> {{ blog.short_description }}</p>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    {% empty %}
+                    <h4>Sorry, No blogs available now!</h4>
+                    {% endfor %}
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class = "col-sm-2"></div> 
+    </div>
+</div>
+</body>
+</html>

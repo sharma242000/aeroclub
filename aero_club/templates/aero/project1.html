@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Project Webpage</title>
+   
+    <!-- Required meta tags -->
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+   
+<link rel="stylesheet" href = "../../aero/css/jobanputra.css">
+<link rel="stylesheet" href = "../../aero/css/nav.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% include 'aero/components/ga_code.html' %}
+  </head>
+  <body>
+{% include 'aero/components/navbar.html' %}
+  <style>
+	  ::-webkit-scrollbar {
+   display: none;
+    }
+    *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+
+  
+
+
+ 
+<!------------backgrounf images------------------------------->
+<img src = "../../aero/css/images/background.png" class = 'bg'>
+</img>
+<div class = "container"> 
+ <div class="row" style = "overflow: hide;" >
+ 	<div class="col"></div>
+ 		<div class="col-12"   >
+  		<h1 id = "project-text" style = "text-align: center;padding-top: 100px;" > PROJECTS </h1>
+<!----!st card--Iris Drone--------------------------->
+  			<div class="card mb-3 " >
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card1" id = "card-left">
+						<!-- <img src="../../aero/css/images/vtol-main.png " width="600px" height="350px"> -->
+     					 
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://docs.google.com/document/d/1c-GKCeP7qwFGY0BSRz0qn5We1SqUJQFsgemVh2OKz8M/edit?usp=sharing 
+							" onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<!-- <a href  = "https://www.youtube.com/watch?v=4GfqB7P6uAE">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">Tilt-Rotor Transition VTOL:</h5>
+        			<small class="text-muted inv1 invisible1 ">Team member: Akshat Verma, Rajeev Dhurandhar, Bokka Krishna Kishore, Himanshu Patil
+					</small>
+       		       <p class="card-text inv1 invisible1 ">
+					This project, in collaboration with CDS-SRG, consists of the design and build of an RC Transitioning Vertical Takeoff and Landing  (VTOL) aircraft with a tilt-rotor mechanism.<span class = "invisible inv">The aircraft takes off vertically without a need for runway following the properties of rotorcraft and then transitions to the cruise mode by tilting the front rotors forwards and follows the properties of a fixed wing UAV thereafter. Similarly, when required to land, the tilt rotors tilt upwards and the aircraft lands vertically undergoing the hover mode. 
+           <br>      
+                <img src="../../aero/css/images/vtol-main.png">
+             <br>  
+                
+			 This design is motivated with an aim to bring in the contrasting advantages of the two widely used aircraft configurations- fixed wing and rotary wings. The fixed wing configuration provides energy efficiency for long and sustained flights while rotor wing configuration gives an operational capacity in a smaller workspace especially for takeoff and landing. This design brings in the best of these two worlds by switching between them appropriately.
+			</p>
+                <img src ="../../aero/css/images/vtol1.png"> 
+                
+                <p class="card-text">The configuration of the aircraft is similar to a tricopter with the two front rotors capable of controlled tilting and thus vectoring the thrust provided at an appropriate point of the tilt corridor.</p>
+				<!-- <img src="../../aero/css/images/vtol2.png"> -->
+				<img src="../../aero/css/images/vtol5.png">
+                
+                <p class="card-text">At the back, the aircraft uses a contra-rotating coaxial fan to improve yaw sensitivity . The geometric characteristics of the aircraft are similar to a flying wing with swept wings and a reflex airfoil MH45. It uses elevons as the major passive control surfaces.
+
+                </p>
+                <!-- <img src="../../aero/css/images/vtol3.png">  -->
+                <img src="../../aero/css/images/vtol4.png">
+                <p class="card-text">
+                  The project has involved the conceptual to detailed design of the aircraft extensively using XFLR5 for its aerodynamic analysis, the CAD modelling of the aircraft and tilt rotor mechanism and formulation and simulation of its control system using MATLAB. The team is currently working on the final stages of the project which involves its hardware build.</span>
+                </p>
+          			 	</div>
+     
+   			   </div>
+			</div>
+      </div>
+     <!--2nd card--FPV plane-----------------------------------------> 
+
+		
+<!----3rd card---Tailsitter---------------------------------------------------------------------------->
+	<div class="card mb-3 " style="max-width: 100%;">
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card3" id = "card-left">
+						<!-- <img src="../../aero/css/images/image13.png" width="600px" height="350px"> -->
+     					 
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://drive.google.com/drive/folders/1R4nqG9HRTqFJ9vN0sOO674G_LYYVyWOI?usp=sharing " onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<!-- <a href  = "https://www.youtube.com/watch?v=WaaIDJds-rk">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">Launch Pad Design for Sounding Rocket: </h5>
+        			<small class="text-muted inv1 invisible1">Team Members: Akshat Verma, Ajay Tak, Piyush Porwal, Anjali Antil
+					</small>
+       		       <p class="card-text inv1 invisible1">
+					This project was done as a part of the national competition Aerospanza- organised by SRM Institute of Science and Technology in sponsorship by STAR - an established startup working in space technology. Our team achieved the first-runners up position there. <span class = "invisible inv"> The project involved the design and modelling of a launch pad for a hybrid engine (solid+liquid) sounding rocket and an attempt to improve the existing launch pads aiming for mobility.
+				</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div><img src="../../aero/css/images/image13.png" width="500px" height="300px"><img src="../../aero/css/images/image12.png" width="500px" height="300px"></div>
+				
+				<!-- <img src="../../aero/css/images/tailsitter1.JPG" > -->
+                <p class="card-text">The team worked extensively on a two-degree of freedom launch pad controlled by a hydraulic linear actuator for vertical orientation and two wheels rested on a semi-circular rail for horizontal orientation. Optimised truss structures were used for the major structural components for mechanical integrity. A launch rail was designed with linear hinges using a latching mechanism for launch. The design of existing flame deflectors was also improved using multi-direction deflection. Several circuits for the launch pad avionics were formulated. For mobility, the team worked on retractable wheels. 
+					The project also included the CAD modelling of the launch pad and its mechanisms and the different components were simulated for load bearing capacity. The range of the launch was highly improved than the existing designs and was appreciated by industry professionals.
+					 </span>              
+                </p>
+
+				
+				<img src="../../aero/css/images/image8.png" width="500px" height="300px">
+				<img src="../../aero/css/images/image9.png" width="500px" height="300px">
+				<img src="../../aero/css/images/image16.png" width="500px" height="300px">
+				<img src="../../aero/css/images/image17.png" width="500px" height="300px">
+				<img src="../../aero/css/images/image14.png" width="500px" height="300px">
+				<img src="../../aero/css/images/image6.png" width="500px" height="300px">
+
+        
+        
+      				</div>
+   		 </div>
+ 
+ 	 </div>
+
+
+</div>
+<!-----4th card---FPV racer Drone------------------------------------------------------------>
+<div class="card mb-3 " style="max-width: 100%;">
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card4" id = "card-left">
+  					 	
+						<!-- <img src="../../aero/css/images/image7.png" width="600px" height="350px"> -->
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://drive.google.com/drive/folders/1NolGusSoIjiCvSb-PTL2joh0ijZUy69r?usp=sharing " onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<!-- <a href  = "https://www.youtube.com/watch?v=1yBwWLunlOM">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">Solid Engine Model Rocket:</h5>
+        			<small class="text-muted inv1 invisible1">Team member:  Akshat Verma, Rajeev Dhurandhar, Isha Mukherjee
+					</small>
+       		       <p class="card-text inv1 invisible1">
+					This project was done as a part of the national competition- Synodic Rocket Design Challenge organised by the Synodic Space Settlements Pvt. Ltd which involved the design of a single-staged reusable model rocket using solid rocket boosters. Our team was placed at the second-runners up position. 
+					<span class = "invisible inv">The model rocket for this project was designed using the software OpenRocket aiming at maximising the apogee and the payload capacity of the rocket under the provided fuel and size constraints. The rocket weighed about 1517 gms, was 75cm long and 7cm in diameter. The achieved apogee for the rocket was around 1225m and the payload capacity was 690gms. These results were obtained after a prolonged optimisation process varying parameters like tube lengths, nose cone, material and others.
+						<br></p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<img src="../../aero/css/images/image7.png" width="500px" height="300px">
+					<img src="../../aero/css/images/image4.png" width="500px" height="300px">
+					<img src="../../aero/css/images/image20.png" width="500px" height="300px">
+					<img src="../../aero/css/images/image11.png" width="500px" height="300px">
+					<img src="../../aero/css/images/image21.png" width="500px" height="300px">
+					<img src="../../aero/css/images/image15.png" width="500px" height="300px">
+					
+					<p class="card-text">
+						The engine of the rocket uses three clustered G77R-10 solid rocket motors. The recovery system is based on a nylon parachute with appropriate shock cords. Three trapezoidal fins have been installed for achieving longitudinal stability.
+					</p>
+					<img src="../../aero/css/images/fpv2.jpg">
+					<img src="../../aero/css/images/fpv.jpg">
+					<p class="card-text">
+						The extensive performance analysis was performed for the rocket for parameters like vertical motion profile, ground hit velocity, static margin, roll stability and drag characteristic to improve the design further.
+
+					</p>
+				</span>
+				
+				</div>
+
+    </div>
+</div>
+</div>
+<!-----5th card-----skyrush------------------------------------------------------------------>
+<div class="card mb-3 " style="max-width: 100%;">
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card5" id = "card-left">
+  					 	
+						<!-- <img src="../../aero/css/images/wing1.jpeg" width="600px" height="350px"> -->
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://docs.google.com/document/d/1yv2jJdcDQn5oLYKAn5DBmMrClEqfoo9QcbHaeydyGSc/edit#heading=h.qbcd3usagu0o" onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<!-- <a href  = "https://www.youtube.com/watch?v=L_MaG5G46pA">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">Flying Wing/ Tailless Airplane</h5>
+        			<small class="text-muted inv1 invisible1">Team member: Harshit Singh</small>
+       		       <p class="card-text inv1 invisible1">
+					The initial focus of the project is to learn more about the “Flying Wing” configuration of fixed wing aircrafts.<span class = "invisible inv">This is to be done by exploring the fixed wing full scale and model aircrafts already built and understanding the pros and cons. Thereafter, to design a model of our own and manufacture it to understand how different the flight of a flying wing is in comparison to a conventional fixed wing aircraft with a tail. But most important  is to have fun while exploring this new realm of aircrafts.
+ 
+				   </p>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   <br>
+				   
+				   <img src="../../aero/css/images/wing1.jpeg" width="500px" height="300px">
+				   <img src="../../aero/css/images/wing2.jpeg" width="500px" height="300px">
+				   <img src="../../aero/css/images/wing3.jpeg" width="500px" height="300px">
+				   <!-- <img src="../../aero/css/images/image8.png" width="500px" height="300px">
+				   <img src="../../aero/css/images/image8.png" width="500px" height="300px"> -->
+				</span>
+				
+				 
+			
+			
+			
+			
+
+          
+          </div>
+      </div>
+ </div>
+</div>
+<!-------6th card----Boeing 2020----------------------------------------------------------------------------------------->
+
+<div class="card mb-3 " style="max-width: 100%;">
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card6" id = "card-left">
+  					 	
+     					 
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://docs.google.com/document/d/1h7jiHC0Ih5GoVv7kY6-O_H8mMJ2wVmn1SGWEUdZ8DPk/edit#" onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<a href  = "https://www.youtube.com/watch?v=sPayYV15tQI">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a>
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">Boeing - IIT National Aeromodelling Competition 2021</h5>
+					<small class="text-muted inv1 invisible1">Team-Teja members: Harshit Singh 
+					</small>
+       		       <p class="card-text inv1 invisible1">
+					secured a zonal second rank and won a cashprize of 25,000. <br> <span class = "invisible inv"> 
+						The competition requires participants to design and fabricate a glider and a catapult mechanism to launch it. Readymade models are not allowed. <br>
+						Wingspan should be a maximum of 50 cm<br>
+						The glider should be launched using a catapult mechanism and should not have any additional power sources<br>
+						The catapult launch mechanism should be in such a way that it can independently stand on the ground. It should be a 100% mechanical device and no use of electronics/ electrical power is allowed.<br>
+						The catapult should have a hold and release mechanism to launch the glider by pushing/ pulling a button/ pin etc.<br>
+						Example: The participant can pull the rubber/ spring of catapult manually to “activate” the system and bring it to the “launch position” but should not continue to hold manually until release. The catapult should have a mechanism to be in “activated” state and hold the glider in launch position by itself. To launch, the participant should then push/ pull a button/ pin and the catapult should then release the glider by itself without any further manual intervention.
+						Launch should be done in 2 steps<br>
+						Setup the glider ready for launch. In this position, the glider should be on the launcher in activated state by itself without the need for any manual intervention.<br>
+						Press/ pull the mechanical button/ pin to release and launch.<br>
+						The catapult should have maximum dimensions of 100 cm x 100 cm x 100 cm.<br>  
+				   <!-- <img src="../../aero/css/images/boeing3.jpg">
+				   <img src="../../aero/css/images/boeing4.jpg"> -->
+				   <img src="../../aero/css/images/fig1.jpg" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig2.jpg" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig3.png" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig4.jpg" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig5.png" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig6.jpg" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig7.jpg" width="500px" height="300px">
+				   <img src="../../aero/css/images/fig8.jpg" width="500px" height="300px">
+				   <!-- <p class="card-text">To provide ease in maneuverability, the ailerons’ area is kept around 15% of the total wing area. According to design constraints, the maximum allowed span length was 120 cm. AR is kept as 6 because lower AR results in more drag and lower effective thrust. As thrust to weight ratio is already skewed. We decided to reduce any drag inducing factors in our design.</p> -->
+				   <!-- <img src="../../aero/css/images/boeing1.jpg">
+				   <img src="../../aero/css/images/boeing2.jpg"> -->
+				</span> 
+				   <!-- <p class="card-text">Our plane’s estimated weight is around 800gms. Keeping that in mind, the plane’s wing loading is 33.33 gm/dm2 without payload. Which will be ideal for the competition. 
+					Ailerons are situated somewhat off centre and towards the end of the half wings. This was done to make the ailerons more sensitive for control as ailerons towards the ends creates more torque. Each aileron has a dimension of 35 x 5 cms and are situated 2.5cms towards the end from the centre of half wing.
+				   </p>
+				   <img src="../../aero/css/images/boeing.jpg" width="1040px" height="800px"> -->
+
+          
+          </div>
+      </div>
+ </div>
+</div>
+<!-------7th card--techfest-drone challenge------------------------------------------------------------>
+
+<div class="card mb-3 " style="max-width: 100%;">
+  				<div class="row no-gutters " id = "card-full"  >
+  					<div class="col click card7" id = "card-left">
+  					 	
+     					 
+   					 <div class = "overlay"></div>
+   					 </div>
+   					 
+    					<div class="col-6 expand click " id = "card-right"  >
+    					
+    						<div class = "container no-click" style= "max-width: -50%;display: flex; justify-content: flex-end; padding-right:0;margin:0;z-index:100;">			
+    						<div class = "flex-child">	
+    						<a href  = "https://docs.google.com/document/d/1uBzW4l50jeJs7T6FTg0uMWZjtlf6i6cepvlJ-MxutAU/edit" onclick="disable()">
+						<img src =  "../../aero/css/images/link.png" class = "icon" ></a>
+						</div>
+						<div class = "flex-child">
+						<!-- <a href  = "https://youtu.be/gHD0CQ_9xSA">
+  						<img src =  "../../aero/css/images/youtube.svg" class = "icon1" ></a> -->
+  						</div>
+						</div>
+      				<div class="card-body">
+        			<h5 class="card-title">AUTONOMOUS RESCUE DRONE </h5>
+        			<small class="text-muted inv1 invisible1">Team member: Anjali Antil,
+						Srishti Sharma,
+						Jinay Nandu,
+						Adithyan Rajesh,
+						Umesh Ghaskata  
+						</small>
+       		       <p class="card-text inv1 invisible1">
+					The main learning objectives of the project are to make a drone autonomous, path planning, obstacles avoidance, and object detection <span class = "invisible inv">So we will be making a drone that can be used for rescue purposes in any tragedy case ( let say earthquake). As in any disaster situation, it's difficult for humans to go inside and look for injured persons, so what we do is activate the drone from outside and it will plan its path(path planning using A* algorithm, doing its simulation in MATLAB) accordingly avoiding any danger to itself. Avoid obstacles in its path and look for humans in its path ( basically object detection) (using OpenCV) and as it finds any human it will give signals by use of a GSM module.
+
+			    <br>
+			   <img src="../../aero/css/images/tfd2.jpg" >
+			   <img src="../../aero/css/images/tfd3.jpg">
+			   <!-- <h5 class="card-text">QR Scanning Method</h5> -->
+			   <p class="card-text"> we have an idea to make an autonomous drone that is capable of detecting humans in disastrous conditions. This system assists in the rescue process by identifying the exact location of the survivors at the earliest. This system comprises a monitoring system along with a camera module and sensor unit to identify the existence of humans buried under the debris. The system sends the data using the GSM module ahead for further action and investigation. 
+
+
+    
+				Finally, the greatest advantage is they are not constrained by land-based obstacles: landscaping, trees, cars, buildings, etc. Even if constrained to predetermined flight paths, drones still have a significant speed advantage over-responding by foot. Furthermore, today’s high-resolution visible light cameras can provide extensive image detail with better stabilization than the best handheld video. Thermal cameras provide for visual detection at night, difficult weather conditions, smoke, and even some vegetation.
+</p></span>
+          
+          </div>
+      </div>
+ </div>
+</div>
+<!----------ITSP------------->
+<!-------8th card----Ion Propulsion----------------------------------------------------------------------------------------------->
+<!------------14th card-------------------------------------------------------------->
+</div>
+<div class = "col"> </div>  
+</div>
+</div>
+</div>
+<!---code for footer
+
+ 
+
+<div class="ro" cellpadding="0" cellspacing="0" style=" position:relative; z-index: 5;">
+  <div class="colum" style="background-color: #021238;">
+      <div id="info"  style = "padding-left: 10px;">
+          <a id="wh" href="#a">Contact info</a><br>
+          <a href="mailto:aero.club@iitb.ac.in" class="fa fa-google"></a>&nbsp; &nbsp;<a id="wh" href="#a">Email Adress</a><br>
+        
+      </div>  
+  </div>
+  <div class="colum" style="background-color: #021238;">
+      <div id="social"  style = "padding-left: 10px;">
+     
+          <a href="https://www.facebook.com/aeromodellingiitb" class="fa fa-facebook"  target="_blank"> </a> &nbsp;&nbsp;
+          <a href="https://www.instagram.com/aeroclub.iitb/" class="fa fa-instagram"  target="_blank"></a> &nbsp;&nbsp;
+          <a href="https://www.youtube.com/channel/UCGlytraxeGRZHF8HG5qrfQA/featured" class="fa fa-youtube"  target="_blank"> </a>
+      </div>  
+  </div>
+  <div class="colum" style="background-color: #021238;color:aliceblue">
+    <div id="mail">
+      <p id="wh" style = "padding-left: 10px;">SUBSCRIBE TO OUR NEWSLETTER</p>
+<form action="/action_page.php">
+  <label for="email" style = "padding-left: 10px;">Enter your email:</label>
+  <input type="email" id="email" name="email" ><br>
+  <input type="submit" style = "margin-left: 10px;">
+</form>
+      </div>  
+  </div>
+  <div class="colum" style="background-color: #021238;">
+      <div id="adress"  style = "margin-left: 10px;">
+      <p id="wh" style = "padding-left: 10px;" >ADDRESS<br> Tinkerer's Lab, IIT Bombay Mumbai, Maharashtra 400076.
+      </p>
+      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D19.134156119975%252C72.916609657821%26fbclid%3DIwAR3SuQG9raHjUvR0wpTA23hpnTw9dxyKb8oGOASrFTK-yt6_VtlUhW_lpj8&h=AT01Nx9YtS7EJDCBjZEiTUxW4rXwYzyjASAx53Azt48PVlJoAo7sixtL_VuMWb0z7ir3kI_uziXRyF203kg-4wp6Xl4hJABipCUdYo42qNQQ2wZC2qPNx3rHrVMCOk6ynBZNVyzvRBMEGUesWk_Urg"><button style='font-size:15px'>Directions<i class='fas fa-directions'></i></button>
+      </a>
+      </div>
+  </div>
+</div>
+-->
+<!-------------------------------------------------------->
+
+<script src ="../../aero/js/jquery.min.js">
+
+</script>
+<script>
+$("a[id!='dropdown03']").click(function(event){
+  event.stopPropagation();
+  
+});
+
+const elems = document.getElementsByClassName("click")
+
+elems[0].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ elem = elem[0]
+ elem_inv = elem_inv[0]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ 
+ elem_inv1[0].classList.toggle("invisible1");
+ elem_inv1[1].classList.toggle("invisible1");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[1].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[0].classList.toggle("invisible1");
+ elem_inv1[1].classList.toggle("invisible1");
+ elem = elem[0]
+ elem_inv = elem_inv[0]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[2].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[2].classList.toggle("invisible1");
+ elem_inv1[3].classList.toggle("invisible1");
+  elem_inv = elem_inv[1]
+ elem = elem[1];
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+elems[3].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ elem = elem[1];
+  var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[2].classList.toggle("invisible1");
+ elem_inv1[3].classList.toggle("invisible1");
+  elem_inv = elem_inv[1]
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+ 
+elems[4].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[4].classList.toggle("invisible1");
+ elem_inv1[5].classList.toggle("invisible1");
+  elem_inv = elem_inv[2]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[2];
+
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+elems[5].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[4].classList.toggle("invisible1");
+ elem_inv1[5].classList.toggle("invisible1");
+  elem_inv = elem_inv[2]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[2];
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+
+
+elems[6].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[6].classList.toggle("invisible1");
+ elem_inv1[7].classList.toggle("invisible1");
+ elem = elem[3]
+ elem_inv = elem_inv[3]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[7].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+  var elem_inv =document.getElementsByClassName("inv")
+  var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[6].classList.toggle("invisible1");
+ elem_inv1[7].classList.toggle("invisible1");
+ elem = elem[3]
+  elem_inv = elem_inv[3]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[8].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[8].classList.toggle("invisible1");
+ elem_inv1[9].classList.toggle("invisible1");
+  elem_inv = elem_inv[4]
+ elem = elem[4];
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+elems[9].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ elem = elem[4];
+  var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[8].classList.toggle("invisible1");
+ elem_inv1[9].classList.toggle("invisible1");
+  elem_inv = elem_inv[4]
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+ 
+elems[10].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[10].classList.toggle("invisible1");
+ elem_inv1[11].classList.toggle("invisible1");
+  elem_inv = elem_inv[5]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[5];
+
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+elems[11].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[10].classList.toggle("invisible1");
+ elem_inv1[11].classList.toggle("invisible1");
+  elem_inv = elem_inv[5]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[5];
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+
+
+
+elems[12].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[12].classList.toggle("invisible1");
+ elem_inv1[13].classList.toggle("invisible1");
+ elem = elem[6]
+ elem_inv = elem_inv[6]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[13].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+  var elem_inv =document.getElementsByClassName("inv")
+  var elem_inv1 =document.getElementsByClassName("inv1")
+ 
+ 
+ 
+ elem_inv1[12].classList.toggle("invisible1");
+ elem_inv1[13].classList.toggle("invisible1");
+ elem = elem[6]
+  elem_inv = elem_inv[6]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[14].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[7]
+ elem = elem[7];
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+elems[15].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ elem = elem[7];
+  var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[7]
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+ 
+elems[16].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[8]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[8];
+
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+elems[17].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[8]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[8];
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+
+
+elems[18].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ elem = elem[9]
+ elem_inv = elem_inv[9]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[19].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+  var elem_inv =document.getElementsByClassName("inv")
+ elem = elem[9]
+  elem_inv = elem_inv[9]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[20].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[10]
+ elem = elem[10];
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+elems[21].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ elem = elem[10];
+  var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[10]
+elem.classList.toggle("togclass");
+elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+ 
+elems[22].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[11]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[11];
+
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+elems[23].addEventListener("click", function(){
+var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ 
+  elem_inv = elem_inv[11]
+
+elem_inv.classList.toggle("invisible");
+elem = elem[11];
+elem.classList.toggle("togclass");
+ elem.classList.toggle("col-6")
+ elem.classList.toggle("col-12")
+elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+}); 
+
+
+elems[24].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+ var elem_inv =document.getElementsByClassName("inv")
+ elem = elem[12]
+ elem_inv = elem_inv[12]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+elems[25].addEventListener("click", function(){
+ var elem = document.getElementsByClassName("expand")
+  var elem_inv =document.getElementsByClassName("inv")
+ elem = elem[12]
+  elem_inv = elem_inv[12]
+ elem.classList.toggle("togclass");
+ elem_inv.classList.toggle("invisible");
+ elem.classList.toggle("col-6")
+  elem.classList.toggle("col-12")
+  
+ elem.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
+
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+
+</script>
+
+
+    <!-- Optional JavaScript -->
+
+  
+  
+  
+  </body>
+</html>

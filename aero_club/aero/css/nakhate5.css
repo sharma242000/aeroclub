@@ -1,0 +1,518 @@
+@font-face{
+    src: url("Azonix.otf");
+    font-family: Azonix;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #141414 0% 0% no-repeat padding-box;
+} 
+
+/* Navbar */
+
+.navbar{
+    background-color: #141414 !important;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-brand:hover{
+    color: #01ACBE;
+}
+
+.navbar .navbar-nav li a{
+    color:white !important;
+    margin-left: 2vw;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-nav li a:hover{
+    color: #01ACBE !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: black !important;
+}
+
+/* main content */
+
+.container{
+    width: 1084.36px;
+    height: 870px;
+    margin: 158px auto 170px auto;
+    display: grid;
+    grid-template-rows: repeat(4, 197.39px);
+    grid-template-columns: repeat(5, 197.39px);
+    grid-row-gap: 23.69px;
+    grid-column-gap: 23.69px;
+}
+
+.container .item{
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.container .item::before{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.item:nth-child(1){
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+    margin-left: 30.92px;
+    margin-bottom: 43px;
+    margin-right: 33.56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.item:nth-child(2){
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    font-size: 30px;
+}
+
+.item:nth-child(2)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "RC Planes";
+    background: linear-gradient(white,white);
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(3){
+    grid-column: 4 / span 2;
+    background: #37026E 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: white;
+    font-size: 30px;
+}
+
+.item:nth-child(3)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Drones";
+    background: linear-gradient(rgb(55, 2, 110),rgb(55, 2, 110));
+    width: 418.36px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(4){
+    background-color: #560095 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: black;
+    font-size: 30px;
+    
+}
+
+.item:nth-child(4)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "LFS";
+    background: linear-gradient(rgb(86,0,149),rgb(86,0,149));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(5){
+    grid-row: 2 / span 2;
+    background: #01ACBE 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    font-size: 30px;
+}
+
+.item:nth-child(5)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Hackathon";
+    background: linear-gradient(rgb(1, 172, 190),rgb(1, 172, 190));
+    width: 197.39px;
+    height: 418.36px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(6){
+    background: #01ACBE 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    font-size: 30px;
+}
+
+.item:nth-child(6)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    content: "Glider Workshop";
+    background: linear-gradient(rgb(1, 172, 190),rgb(1, 172, 190));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(7){
+    background: #37026E 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: white;
+    font-size: 20px;
+}
+
+.item:nth-child(7)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    content: "RC Plane Competition";
+    background: linear-gradient(rgb(55, 2, 110),rgb(55, 2, 110));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(8){
+    background: #560095 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: black;
+    font-size: 25px;
+}
+
+.item:nth-child(8)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Airshow";
+    background: linear-gradient(rgb(86,0,149),rgb(86,0,149));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(9){
+    background: #01ACBE 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    font-size: 30px;
+}
+
+.item:nth-child(9)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    content: "Boeing Competition";
+    background: linear-gradient(rgb(1, 172, 190),rgb(1, 172, 190));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.item:nth-child(10){
+    background: #37026E 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: white;
+    font-size: 30px;
+}
+
+.item:nth-child(10)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "QFS";
+    background: linear-gradient(rgb(55, 2, 110),rgb(55, 2, 110));
+    width: 197.39px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.item:nth-child(11){
+    grid-column: 3 / span 3;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    font-size: 30px;
+}
+
+.item:nth-child(11)::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "The Club";
+    background: linear-gradient(white,white);
+    width: 639.53px;
+    height: 197.39px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container .item #gallery{
+    text-align: left;
+    position: relative;
+    top: 62px;
+    padding: 0px 62px;
+    background-color: white;
+    font-size: 30px;
+    font-family: Azonix;
+    letter-spacing: 0.88px;
+    color: #37026E;
+    opacity: 1;
+}
+
+.container .item #info{
+    position: relative;
+    text-align: left;
+    top: 120px;
+    padding: 0px 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #37026E;
+    opacity: 1;
+}
+
+.container .item:nth-child(2):hover, .container .item:nth-child(3):hover, .container .item:nth-child(4):hover, .container .item:nth-child(5):hover, .container .item:nth-child(6):hover, .container .item:nth-child(7):hover, .container .item:nth-child(8):hover, .container .item:nth-child(9):hover, .container .item:nth-child(10):hover, .container .item:nth-child(11):hover{
+    color: transparent;
+    background-color: white;
+}
+
+.container .item:nth-child(2):hover::before{
+    background: url('../img/rcp1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(3):hover::before{
+    background: url('../img/drone1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(4):hover::before{
+    background: url('../img/lfs1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(5):hover::before{
+    background: url('../img/hackathon1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(6):hover::before{
+    background: url('../img/gliderw1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(7):hover::before{
+    background: url('../img/rcpc1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(8):hover::before{
+    background: url('../img/airshow1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(9):hover::before{
+    background: url('../img/boeingc1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(10):hover::before{
+    background: url('../img/qfs1.jpg') no-repeat center center/cover;
+}
+
+.container .item:nth-child(11):hover::before{
+    background: url('../img/theclub1.jpg') no-repeat center center/cover;
+}
+
+#rcpModal, #dronesModal, #lfsModal, #hackModal, #gliderModal, #rcpcModal, #airshowModal, #boeingModal, #clubModal, #qfsModal{
+    color: white;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-body{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-dialog{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-title{
+    font-size: 1.5rem;
+}
+
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-control-next-icon{
+    position: relative;
+    right: -8vw;
+}
+
+.carousel-control-prev-icon{
+    position: relative;
+    left: -8vw;
+}
+
+.modal-header{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-footer{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-footer .btn-secondary{
+    background-color: #37026E ;
+}
+
+/* footer */
+
+form{
+    background-color: #01ACBE;
+}
+
+  #contact{
+    padding-top: 5vh;
+    padding-left: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bold;
+  }
+  .wh{
+    background-color: #01ACBE;    
+    text-decoration: none;
+    color:white;
+  }
+  #social{
+    background-color: #01ACBE;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bold;
+    color:white;
+    padding-top:6vh;
+    padding-left:3vw;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    height: 150px; /* Should be removed. Only for demonstration */
+    
+    
+  }
+  
+  /* Clear floats after the columns */
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  .container{
+    position: absolute;
+  text-align: center;
+  color: white;
+  }
+  .fa {
+    padding: 0.18vw;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    
+    color: white;
+  }
+  .fa-youtube {
+    
+    color: white;
+  }
+  
+  .fa-instagram {
+   
+    color: white;
+  }
+  .fa-google {
+   
+    color: white;}
+
+    #info1{
+      background-color: #01ACBE;  
+      padding-top: 2vh;
+      padding-left: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:medium;
+      font-weight: bold;
+    }
+    #adress{
+      background-color: #01ACBE;  
+      padding-top: 1vh;
+      padding-left: 3vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:13px;
+    }
+   
+    #mail{
+      background-color: #01ACBE;  
+      padding-top: 1vw;
+      padding-left: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:13px;
+    }
+    @media only screen and (max-width: 600px) {
+
+      #mail{
+        padding-top: 0vw;
+        padding-left: 0vw;
+      font-size: 10px;}
+        #adress{
+          padding-top: 0vh;
+          padding-left: 0vw;
+        font-size: 10px;}
+        #info1{
+          padding-top: 4vh;
+          padding-left: 1vw;
+          font-size:10px;}
+          #social{  
+            padding-top: 8vw;
+            font-size:small;
+          }}
+@media only screen and (max-width: 600px) and (min-width: 400px) { .column{
+            width:50%;
+            height:100px;
+          }
+        }
+
+        @media only screen and (max-width: 400px) {  .column{
+            width :100%;
+            height:100px;
+          }
+        }  
+

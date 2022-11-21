@@ -1,0 +1,347 @@
+{% load static %}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  
+  height: auto;
+  background-size:70%;
+  background-color: black;
+  background-attachment: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+ 
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.text{
+  color:  #01ACBE;
+  font-size:larger;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  font-family: 'Varela Round', sans-serif;
+  
+}
+#about{
+  padding-top: 2vh;
+  padding-left: 5vh;
+  font-size: 6vh;
+  color:  #01ACBE;
+  height: 12vh;
+  font-family: 'Suez One', serif;
+  margin-left: 20px;
+}
+.img{
+  width: 200px;
+  height: 200px;
+}
+.para{
+  font-size: x-small;
+  color:rgb(147, 226, 226);
+}
+
+.youtube{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; 
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar{
+  background-color: #141414 !important;
+}
+
+.navbar .navbar-brand{
+  color: white!important;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-brand:hover{
+  color: #01ACBE;
+}
+
+.navbar .navbar-nav li a{
+  color:white !important;
+  margin-left: 2vw;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-nav li a:hover{
+  color: #01ACBE !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item{
+  color: black !important;
+}
+
+
+
+/* footer */
+#contact{
+  padding-top: 5vh;
+  padding-left: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  font-weight: bold;
+}
+#wh{
+  text-decoration: none;
+  color:white;
+}
+#social{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  font-weight: bold;
+  color:white;
+  padding-top:6vh;
+  padding-left:3vw;
+}
+.colum {
+  float: left;
+  width: 25%;
+  height: 150px; /* Should be removed. Only for demonstration */
+  
+  
+}
+
+/* Clear floats after the columns */
+.ro:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+.container{
+  position: absolute;
+text-align: center;
+color: white;
+}
+.fa {
+  padding: 0.18vw;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  
+  color: white;
+}
+.fa-youtube {
+  
+  color: white;
+}
+
+.fa-instagram {
+ 
+  color: white;
+}
+.fa-google {
+ 
+  color: white;}
+
+  #info{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+  #adress{
+    padding-top: 1vh;
+    padding-left: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+  }
+ 
+  #mail{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+  }
+  @media only screen and (max-width: 600px) {
+
+    #mail{
+      padding-top: 0vw;
+      padding-left: 0vw;
+    font-size: 10px;}
+      #adress{
+        padding-top: 0vh;
+        padding-left: 0vw;
+      font-size: 10px;}
+      #info{
+        padding-top: 4vh;
+        padding-left: 1vw;
+        font-size:10px;}
+        #social{
+          padding-top: 8vw;
+          font-size:small;
+        }}
+
+/* .sticky-top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+} */
+
+
+
+
+ @media only screen and (max-width: 400px) {  .colum{
+  width :100%;
+  height:100px;
+}
+}
+ @media only screen and (max-width: 600px) and (min-width: 400px) { .colum{
+    width:50%;
+    height:100px;
+  }
+}
+
+
+/*  */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  */
+
+.testimonial{
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
+}
+.testimonial .description{
+    padding: 0 15px;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 26px;
+}
+.testimonial .testimonial-title{
+    font-size: 14px;
+    letter-spacing: 3px;
+    color:rgb(156, 149, 149);
+    text-transform: uppercase;
+    position: relative;
+}
+.testimonial .testimonial-title:after{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    color: #54478a;
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background: #f3904d;
+    margin: 5px 7px;
+    opacity: 0.5;
+}
+
+
+.backcol{
+  background-color:rgba(10, 10, 10, 0.85);
+  /* opacity: 0.7; */
+ 
+}
+.pic{
+  margin-top: -50px;
+}
+.name{
+  justify-content: center;
+  color: white;
+}
+
+.description{
+  font-family: 'Varela Round', sans-serif;
+}
+#first_name{
+  font-size: larger;
+}
